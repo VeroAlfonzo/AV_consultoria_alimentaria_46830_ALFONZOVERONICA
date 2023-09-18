@@ -1,0 +1,137 @@
+.header_contacto {
+    width: 100%;
+    height: 18.5rem;
+    background-color: #94ADD7;
+    position: sticky;
+    top: 0;
+
+    .logo_contacto {
+        width: 14.375rem
+    }
+
+    .AV_contacto {
+        font-family: 'Noto Serif Display', serif;
+        text-align: center;
+        color: rgb(250, 250, 253);
+        font-size: 3.125rem;
+        background-color: #94ADD7;
+        display: inline;
+        position: relative;
+        top: -1rem;
+        left: 8.75rem;
+    }
+
+    .Compromiso_contacto {
+        font-family: 'Noto Serif Display', serif;
+        font-style: italic;
+        text-align: center;
+        background-color: #94ADD7;
+        display: inline;
+        justify-content: center;
+        position: relative;
+        top: .75rem;
+        left: -16.3125rem;
+        animation: texto 5s infinite;
+    }
+
+    .nav_contacto {
+        position: relative;
+        top: -4.25rem;
+        right: 0rem;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #94ADD7;
+            font-size: 1.875rem;
+            list-style-type: none;
+            justify-content: center;
+            margin-bottom: 0px;
+
+            .a_contacto {
+                font-family: 'Times New Roman', serif;
+                font-size: 1.875rem;
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #94ADD7;
+                width: 11.25rem;
+                height: 1.875rem;
+                display: inline-block;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header_contacto .logo_contacto {
+        width: 9.375rem;
+        display: inline;
+    }
+
+    .AV_contacto {
+        font-size: 1.875rem;
+        background-color: #94ADD7;
+        position: relative;
+        top: -0.6875rem;
+        left: 0.6875rem;
+    }
+
+    .Compromiso_contacto {
+        display: block;
+        position: relative;
+        top: -1rem;
+        left: 1.8125rem;
+    }
+
+    .nav {
+        position: relative;
+        top: -2.25rem;
+        right: 0rem;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5625rem;
+            list-style-type: none;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #body .header_contacto .logo_contacto {
+        width: 9.375rem;
+        display: inline;
+    }
+
+    .AV_contacto {
+        font-size: 1.875rem;
+        background-color: #94ADD7;
+        position: relative;
+        top: -0.6875rem;
+        left: 0.6875rem;
+    }
+
+    .Compromiso_contacto {
+        display: block;
+        position: relative;
+        top: -1rem;
+        left: 1.8125rem;
+    }
+
+    .nav {
+        position: relative;
+        top: -2.25rem;
+        right: 0rem;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5625rem;
+            list-style-type: none;
+            justify-content: center;
+        }
+    }
+}

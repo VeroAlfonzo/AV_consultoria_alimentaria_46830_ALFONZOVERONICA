@@ -1,0 +1,741 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Noto+Serif+Display:wght@500 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Proza libre";
+  src: url("../resource/font/ProzaLibre-Bold.tt");
+}
+@font-face {
+  font-family: "Cormorant garamond";
+  src: url("../resource/font/CormorantGaramond-Bold.ttf");
+}
+.header {
+  background-color: #94ADD7;
+  position: sticky;
+  top: 0;
+}
+.header .logo {
+  width: 15.625rem;
+  display: inline;
+}
+.header .AV {
+  font-family: "Noto Serif Display", serif;
+  text-align: center;
+  color: rgb(250, 250, 253);
+  font-size: 50px;
+  background-color: #94ADD7;
+  display: inline;
+  position: relative;
+  top: -7.6875rem;
+  left: 8.75rem;
+}
+.header .Compromiso {
+  font-family: "Noto Serif Display", serif;
+  font-style: italic;
+  text-align: center;
+  background-color: #94ADD7;
+  display: inline;
+  justify-content: center;
+  position: relative;
+  top: -5.8125rem;
+  left: -16.3125rem;
+  animation: texto 5s infinite;
+}
+.header .nav {
+  position: relative;
+  top: -5rem;
+  right: 0rem;
+}
+.header .nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #94ADD7;
+  font-size: 1.875rem;
+  list-style-type: none;
+  justify-content: center;
+}
+.header .nav ul a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #94ADD7;
+  width: 11.25rem;
+  height: 1.875rem;
+  display: inline-block;
+  text-align: center;
+}
+.header .nav ul .INICIO:hover {
+  text-decoration: dashed;
+  color: black;
+}
+.header .nav ul .SERVICIOS:hover {
+  text-decoration: dashed;
+  color: black;
+}
+.header .nav ul .CLIENTES:hover {
+  text-decoration: dashed;
+  color: black;
+}
+.header .nav ul .CAPACITACIONES:hover {
+  text-decoration: dashed;
+  color: black;
+}
+.header .nav ul .CONTACTOS:hover {
+  text-decoration: dashed;
+  color: black;
+}
+
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#main_index {
+  background-color: #A0BFE0;
+}
+#main_index .descripcion_empresa {
+  margin: 2.5rem;
+  text-align: center;
+  text-align: justify;
+  font-size: 20px;
+}
+#main_index .nuestro_enfoque {
+  text-align: center;
+  font-size: 1.5625rem;
+}
+#main_index .valores {
+  text-align: center;
+  font: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+}
+#main_index .cualidades {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#main_index .cualidades div {
+  margin: 1.25rem;
+}
+#main_index .cualidades div h5 {
+  margin: 1rem;
+}
+#main_index .quienes_somos {
+  display: grid;
+  width: 68.75rem;
+  height: 40.625rem;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "uno dos " "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
+  justify-items: start;
+  align-items: center;
+  margin: auto;
+}
+#main_index .quienes_somos div {
+  margin: 2px;
+}
+#main_index .quienes_somos .uno {
+  grid-area: uno;
+}
+#main_index .quienes_somos .uno .daniela {
+  width: 16.25rem;
+  height: 12.5rem;
+}
+#main_index .quienes_somos .dos {
+  grid-area: dos;
+}
+#main_index .quienes_somos .tres {
+  grid-area: tres;
+}
+#main_index .quienes_somos .cuatro {
+  grid-area: cuatro;
+}
+#main_index .quienes_somos .cuatro .juan_carlos {
+  width: 16.25rem;
+  height: 12.5rem;
+}
+#main_index .quienes_somos .cinco {
+  grid-area: cinco;
+}
+#main_index .quienes_somos .seis {
+  grid-area: seis;
+}
+#main_index .quienes_somos .siete {
+  grid-area: siete;
+}
+#main_index .quienes_somos .siete .jimena {
+  width: 16.25rem;
+  height: 12.5rem;
+}
+#main_index .quienes_somos .ocho {
+  grid-area: ocho;
+}
+#main_index .quienes_somos .nueve {
+  grid-area: nueve;
+}
+
+h2 {
+  font-family: "Cormorant garamond";
+  margin-bottom: 1.25rem;
+  background-color: #2660a4;
+  color: black;
+}
+
+footer {
+  background-color: #a499b3;
+  background-image: linear-gradient(#94ADD7 #a499b3);
+  color: white;
+  text-align: center;
+}
+footer .instagram {
+  width: 3.125rem;
+}
+footer .facebook {
+  width: 3.125rem;
+}
+footer .creador {
+  text-align: left;
+}
+
+#main_servicios {
+  background-color: #A0BFE0;
+  color: black;
+}
+#main_servicios .servicios_corporativos {
+  margin-top: 3.125rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+#main_servicios .servicios_restaurantes {
+  margin-bottom: 3.125rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+#main_servicios .servicios {
+  display: grid;
+  width: 68.75rem;
+  height: 40.625rem;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "uno dos " "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
+  justify-items: start;
+  align-items: center;
+  margin: auto;
+}
+#main_servicios .servicios .iso_9001 {
+  grid-area: uno;
+}
+#main_servicios .servicios .iso_9001 .ISO {
+  width: 16.25rem;
+}
+#main_servicios .servicios .Impletentación {
+  grid-area: dos;
+}
+#main_servicios .servicios .Buenas_practicas {
+  grid-area: tres;
+}
+#main_servicios .servicios .gestion_de_calidad {
+  grid-area: cuatro;
+}
+#main_servicios .servicios .gestion_de_calidad .gestion {
+  width: 16.25rem;
+}
+#main_servicios .servicios .herramientas {
+  grid-area: cinco;
+}
+#main_servicios .servicios .entandarizacion {
+  grid-area: seis;
+}
+#main_servicios .servicios .documentacion_gestion_calidad {
+  grid-area: siete;
+}
+#main_servicios .servicios .documentacion_gestion_calidad .documentacion_gestion {
+  width: 16.25rem;
+}
+#main_servicios .servicios .documentacion {
+  grid-area: ocho;
+}
+#main_servicios .servicios .desarrollo {
+  grid-area: nueve;
+}
+
+#main_clientes {
+  background-color: #A0BFE0;
+  color: black;
+}
+
+.Nuestros_clientes {
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+#main_clientes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main_clientes div img {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+.arcor {
+  width: 9.375rem;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.canuelas {
+  width: 9.375rem;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.la_virginia {
+  width: 9.375rem;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.manaos {
+  width: 9.375rem;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.arcor:hover {
+  transform: scale(1.1);
+}
+
+.canuelas:hover {
+  transform: scale(1.1);
+}
+
+.la_virginia:hover {
+  transform: scale(1.1);
+}
+
+.manaos:hover {
+  transform: scale(1.1);
+}
+
+#main_capacitaciones {
+  background-color: #A0BFE0;
+  color: black;
+}
+
+.todo_proceso {
+  margin: 1.875rem;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.section_capacitaciones {
+  display: grid;
+  width: 68.0625rem;
+  height: 75rem;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve" "diez once" "diez doce" "trece catorce" "trece quince" "dieciseis diecisiete" "dieciseis dieciocho";
+  justify-items: start;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.section__uno {
+  grid-area: uno;
+}
+
+.section__dos {
+  grid-area: dos;
+}
+
+.section__tres {
+  grid-area: tres;
+}
+
+.section__cuatro {
+  grid-area: cuatro;
+}
+
+.section__cinco {
+  grid-area: cinco;
+}
+
+.section__seis {
+  grid-area: seis;
+}
+
+.section__siete {
+  grid-area: siete;
+}
+
+.section__ocho {
+  grid-area: ocho;
+}
+
+.section__nueve {
+  grid-area: nueve;
+}
+
+.section__diez {
+  grid-area: diez;
+}
+
+.section__once {
+  grid-area: once;
+}
+
+.section__doce {
+  grid-area: doce;
+}
+
+.section__trece {
+  grid-area: trece;
+}
+
+.section__catorce {
+  grid-area: catorce;
+}
+
+.section__quince {
+  grid-area: quince;
+}
+
+.section__dieciseis {
+  grid-area: dieciseis;
+}
+
+.section__diecisiete {
+  grid-area: diecisiete;
+}
+
+.section__dieciocho {
+  grid-area: dieciocho;
+}
+
+.BPM {
+  width: 16.25rem;
+  height: 100%;
+  margin: 5px;
+}
+
+.HACCP {
+  width: 16.25rem;
+  height: 100%;
+  margin: 5px;
+}
+
+.libre_de_gluten {
+  width: 16.25rem;
+  height: 100%;
+  margin: 5px;
+}
+
+.PEPS {
+  width: 16.25rem;
+  margin: 5px;
+}
+
+.POES {
+  width: 16.25rem;
+  margin: 5px;
+}
+
+.Recall {
+  width: 16.25rem;
+  margin: 5px;
+}
+
+#body_contacto {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.header_contacto {
+  width: 100%;
+  height: 18.5rem;
+  background-color: #94ADD7;
+  position: sticky;
+  top: 0;
+}
+
+.logo_contacto {
+  width: 14.375rem;
+}
+
+.AV_contacto {
+  font-family: "Noto Serif Display", serif;
+  text-align: center;
+  color: rgb(250, 250, 253);
+  font-size: 3.125rem;
+  background-color: #94ADD7;
+  display: inline;
+  position: relative;
+  top: -1rem;
+  left: 8.75rem;
+}
+
+.Compromiso_contacto {
+  font-family: "Noto Serif Display", serif;
+  font-style: italic;
+  text-align: center;
+  background-color: #94ADD7;
+  display: inline;
+  justify-content: center;
+  position: relative;
+  top: 0.75rem;
+  left: -16.3125rem;
+  animation: texto 5s infinite;
+}
+
+.nav_contacto ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #94ADD7;
+  font-size: 1.875rem;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.a_contacto {
+  font-family: "Times New Roman", serif;
+  font-size: 1.875rem;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #94ADD7;
+  width: 11.25rem;
+  height: 1.875rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav_contacto {
+  position: relative;
+  top: -4.25rem;
+  right: 0rem;
+}
+
+#main_contacto {
+  background-color: #A0BFE0;
+  color: black;
+}
+
+#main_contacto section h2 {
+  background-color: #2660a4;
+  color: black;
+}
+
+.telefono {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+.email {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .logo {
+    width: 9.375rem;
+    display: inline;
+  }
+  .AV {
+    font-size: 1.875rem;
+    position: relative;
+    top: -5.6875rem;
+    left: 0.6875rem;
+  }
+  .Compromiso {
+    position: relative;
+    top: -4rem;
+    left: 11.8125rem;
+  }
+  .nav {
+    position: relative;
+    top: -2.8125rem;
+    right: 0rem;
+  }
+  .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5625rem;
+    list-style-type: none;
+    justify-content: center;
+  }
+  .quienes_somos {
+    display: grid;
+    width: 33.8125rem;
+    height: 44.25rem;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
+  }
+  .daniela {
+    width: 12.9375rem;
+  }
+  .juan_carlos {
+    width: 12.9375rem;
+    height: 10.9375rem;
+  }
+  .jimena {
+    width: 12.9375rem;
+    height: 11.6875rem;
+  }
+  .servicios {
+    display: grid;
+    width: 33.8125rem;
+    height: 44.25rem;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
+  }
+  .ISO {
+    width: 12.9375rem;
+  }
+  .gestion {
+    width: 12.9375rem;
+  }
+  .documentacion_gestion {
+    width: 12.9375rem;
+  }
+  .Nuestros_clientes {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  #main_clientes div img {
+    width: 9.375rem;
+    height: 9.375rem;
+    margin: 5px;
+  }
+  .todo_proceso {
+    margin: 1.875rem;
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+  .section_capacitaciones {
+    display: grid;
+    width: 35rem;
+    height: 75rem;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "uno dos" "uno tres" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve" "diez once" "diez doce" "trece catorce" "trece quince" "dieciseis diecisiete" "dieciseis dieciocho";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  .section__dos {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__tres {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__cinco {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__seis {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__ocho {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__nueve {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__once {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__doce {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__trece {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__catorce {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__quince {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__diecisiete {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .section__dieciocho {
+    width: 19.6875rem;
+    font-size: 14px;
+  }
+  .BPM {
+    width: 14rem;
+    height: 100%;
+    margin: 5px;
+  }
+  .HACCP {
+    width: 14rem;
+    height: 100%;
+    margin: 5px;
+  }
+  .libre_de_gluten {
+    width: 14rem;
+    height: 100%;
+    margin: 5px;
+  }
+  .PEPS {
+    width: 14rem;
+    margin: 5px;
+  }
+  .POES {
+    width: 14rem;
+    margin: 5px;
+  }
+  .Recall {
+    width: 14rem;
+    margin: 5px;
+  }
+  .AV_contacto {
+    font-size: 1.875rem;
+    background-color: #94ADD7;
+    position: relative;
+    top: -0.6875rem;
+    left: 0.6875rem;
+  }
+  .logo_contacto {
+    width: 9.375rem;
+  }
+  .nav_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5625em;
+    list-style-type: none;
+    justify-content: center;
+  }
+  .Compromiso_contacto {
+    display: block;
+    position: relative;
+    top: -1rem;
+    left: 1.8125rem;
+  }
+  .nav_contacto {
+    top: -1.25rem;
+  }
+}/*# sourceMappingURL=main.css.map */

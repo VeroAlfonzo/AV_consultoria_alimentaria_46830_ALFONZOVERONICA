@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif+Display:wght@500 & display=swap');
+
+@font-face {
+    font-family: "Proza libre";
+    src: url('../resource/font/ProzaLibre-Bold.tt');
+}
+
+@font-face {
+    font-family: "Cormorant garamond";
+    src: url('../resource/font/CormorantGaramond-Bold.ttf');
+}
+
+h2 {
+    font-family: "Cormorant garamond";
+    margin-bottom: 1.25rem;
+    background-color: #2660a4;
+    color: black;
+}

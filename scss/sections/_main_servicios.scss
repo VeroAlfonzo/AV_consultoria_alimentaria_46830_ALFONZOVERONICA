@@ -1,0 +1,159 @@
+#main_servicios {
+    background-color: #A0BFE0;
+    color: black;
+
+    .servicios_corporativos {
+        margin-top: 3.125rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .servicios_restaurantes {
+        margin-bottom: 3.125rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .servicios {
+        display: grid;
+        width: 68.75rem;
+        height: 40.625rem;
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+            "uno dos "
+            "uno tres"
+            "cuatro cinco"
+            "cuatro seis"
+            "siete ocho"
+            "siete nueve"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
+
+        .iso_9001 {
+            grid-area: uno;
+
+            .ISO {
+                width: 16.25rem;
+            }
+        }
+
+        .Impletentación {
+            grid-area: dos;
+        }
+
+        .Buenas_practicas {
+            grid-area: tres;
+        }
+
+        .gestion_de_calidad {
+            grid-area: cuatro;
+
+            .gestion {
+                width: 16.25rem;
+            }
+        }
+
+        .herramientas {
+            grid-area: cinco;
+        }
+
+        .entandarizacion {
+            grid-area: seis;
+        }
+
+        .documentacion_gestion_calidad {
+            grid-area: siete;
+
+            .documentacion_gestion {
+                width: 16.25rem;
+            }
+        }
+
+        .documentacion {
+            grid-area: ocho;
+        }
+
+        .desarrollo {
+            grid-area: nueve;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #main_servicios .servicios {
+        display: grid;
+        width: 33.8125rem;
+        height: 53.25rem;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+            "uno dos"
+            "uno tres"
+            "cuatro cinco"
+            "cuatro seis"
+            "siete ocho"
+            "siete nueve";
+
+        .iso_9001 {
+            grid-area: uno;
+
+            .ISO {
+                width: 12.25rem;
+            }
+        }
+        .gestion_de_calidad {
+            grid-area: cuatro;
+
+            .gestion {
+                width: 12.25rem;
+            }
+        }
+        .documentacion_gestion_calidad {
+            grid-area: siete;
+
+            .documentacion_gestion {
+                width: 12.25rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    #main_servicios .servicios {
+        display: grid;
+        width: 33.8125rem;
+        height: 53.25rem;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+            "uno dos"
+            "uno tres"
+            "cuatro cinco"
+            "cuatro seis"
+            "siete ocho"
+            "siete nueve";
+
+        .iso_9001 {
+            grid-area: uno;
+
+            .ISO {
+                width: 12.25rem;
+            }
+        }
+        .gestion_de_calidad {
+            grid-area: cuatro;
+
+            .gestion {
+                width: 12.25rem;
+            }
+        }
+        .documentacion_gestion_calidad {
+            grid-area: siete;
+
+            .documentacion_gestion {
+                width: 12.25rem;
+            }
+        }
+    }
+}

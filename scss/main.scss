@@ -1,0 +1,22 @@
+@import './assets/tipografia';
+@import './assets/reset';
+@import './sections/body';
+@import './sections/header';
+@import './sections/main_index';
+@import './sections/footer';
+@import './sections/main_servicios';
+@import './sections/main_clientes';
+@import './sections/main_capacitaciones';
+@import './sections/header_contacto';
+@import './sections/main_contacto';
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+p {
+    margin-bottom: 0rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+
+}

@@ -1,0 +1,37 @@
+#main_clientes {
+    background-color: #A0BFE0;
+    color: black;
+    .Nuestros_clientes{
+        text-align: center;
+        font-size: 1.875rem;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 9.375rem;
+            height: 9.375rem;
+            margin: 5px;
+            transition: all .3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #main_clientes
+    .Nuestros_clientes{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    div img {
+        width: 9.375rem;
+        height: 9.375rem;
+        margin: 5px;
+    }  
+}
+
+

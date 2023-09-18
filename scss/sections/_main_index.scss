@@ -1,0 +1,192 @@
+#main_index {
+    background-color: #A0BFE0;
+
+    .descripcion_empresa {
+        margin: 2.5rem;
+        text-align: center;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .nuestro_enfoque {
+        text-align: center;
+        font-size: 1.5625rem;
+    }
+
+    .valores {
+        text-align: center;
+        font-size: 1.25rem;
+        font-style: italic;
+        margin-bottom: 1.25rem;
+    }
+
+    .cualidades {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        div {
+            margin: 1.25rem;
+
+            h5 {
+                margin: 1rem;
+            }
+        }
+    }
+
+    .quienes_somos {
+        display: grid;
+        width: 68.75rem;
+        height: 40.625rem;
+        grid-template-columns: 25% 75%;
+        grid-template-areas:
+            "uno dos "
+            "uno tres"
+            "cuatro cinco"
+            "cuatro seis"
+            "siete ocho"
+            "siete nueve"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
+
+        div {
+            margin: 2px;
+        }
+
+        .uno {
+            grid-area: uno;
+
+            .daniela {
+                width: 16.25rem;
+                height: 12.5rem;
+            }
+        }
+
+        .dos {
+            grid-area: dos;
+        }
+
+        .tres {
+            grid-area: tres;
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+
+            .juan_carlos {
+                width: 16.25rem;
+                height: 12.5rem;
+            }
+        }
+
+        .cinco {
+            grid-area: cinco;
+        }
+
+        .seis {
+            grid-area: seis;
+        }
+
+        .siete {
+            grid-area: siete;
+
+            .jimena {
+                width: 16.25rem;
+                height: 12.5rem;
+            }
+        }
+
+        .ocho {
+            grid-area: ocho;
+        }
+
+        .nueve {
+            grid-area: nueve;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #main_index .quienes_somos {
+        display: grid;
+        width: 33.8125rem;
+        height: 44.25rem;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+            "uno dos"
+            "uno tres"
+            "cuatro cinco"
+            "cuatro seis"
+            "siete ocho"
+            "siete nueve";
+
+        .uno {
+            grid-area: uno;
+
+            .daniela {
+                width: 12.9375rem;
+            }
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+
+            .juan_carlos {
+                width: 12.9375rem;
+                height: 10.9375rem;
+            }
+        }
+
+        .siete {
+            grid-area: siete;
+
+            .jimena {
+                width: 12.9375rem;
+                height: 11.6875rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #main_index .quienes_somos {
+        display: grid;
+        width: 33.8125rem;
+        height: 44.25rem;
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+            "uno dos"
+            "uno tres"
+            "cuatro cinco"
+            "cuatro seis"
+            "siete ocho"
+            "siete nueve";
+
+        .uno {
+            grid-area: uno;
+
+            .daniela {
+                width: 12.9375rem;
+            }
+        }
+
+        .cuatro {
+            grid-area: cuatro;
+
+            .juan_carlos {
+                width: 12.9375rem;
+                height: 10.9375rem;
+            }
+        }
+
+        .siete {
+            grid-area: siete;
+
+            .jimena {
+                width: 12.9375rem;
+                height: 11.6875rem;
+            }
+        }
+    }
+}
