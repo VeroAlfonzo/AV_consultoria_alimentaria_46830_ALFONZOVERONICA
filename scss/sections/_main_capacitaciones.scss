@@ -5,421 +5,132 @@
     flex-direction: column;
 
     .todo_proceso {
-        margin: 1.875rem;
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 30px;
         text-align: justify;
         font-size: 20px;
     }
 
     .section_capacitaciones {
-        display: grid;
-        width: 68.0625rem;
-        height: 75rem;
-        grid-template-columns: 25% 75%;
-        grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve"
-            "diez once"
-            "diez doce"
-            "trece catorce"
-            "trece quince"
-            "dieciseis diecisiete"
-            "dieciseis dieciocho"
-        ;
-        justify-items: start;
-        align-items: center;
-        justify-content: space-evenly;
+        max-width: 35rem;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
 
-        .section__uno {
-            grid-area: uno;
+    .section_capacitaciones p {
+        font-size: 18px;
+        text-align: justify;
+    }
 
-            .BPM {
-                width: 16.25rem;
-                height: 100%;
-                ;
-                margin: 5px;
-            }
-        }
-
-        .section__dos {
-            grid-area: dos;
-        }
-
-        .section__tres {
-            grid-area: tres;
-        }
-
-        .section__cuatro {
-            grid-area: cuatro;
-
-            .HACCP {
-                width: 16.25rem;
-                height: 100%;
-                margin: 5px;
-            }
-        }
-
-        .section__cinco {
-            grid-area: cinco;
-        }
-
-        .section__seis {
-            grid-area: seis;
-        }
-
-        .section__siete {
-            grid-area: siete;
-
-            .libre_de_gluten {
-                width: 16.25rem;
-                height: 100%;
-                margin: 5px;
-            }
-        }
-
-        .section__ocho {
-            grid-area: ocho;
-        }
-
-        .section__nueve {
-            grid-area: nueve;
-        }
-
-        .section__diez {
-            grid-area: diez;
-
-            .PEPS {
-                width: 16.25rem;
-                margin: 5px;
-            }
-        }
-
-        .section__once {
-            grid-area: once;
-        }
-
-        .section__doce {
-            grid-area: doce;
-        }
-
-        .section__trece {
-            grid-area: trece;
-
-            .POES {
-                width: 16.25rem;
-                margin: 5px;
-            }
-        }
-
-        .section__catorce {
-            grid-area: catorce;
-        }
-
-        .section__quince {
-            grid-area: quince;
-        }
-
-        .section__dieciseis {
-            grid-area: dieciseis;
-
-            .Recall {
-                width: 16.25rem;
-                margin: 5px;
-            }
-        }
-
-        .section__diecisiete {
-            grid-area: diecisiete;
-        }
-
-        .section__dieciocho {
-            grid-area: dieciocho;
-        }
+    .BPM {
+        @extend .grid_capacitaciones;
     }
 }
 
 @media (max-width: 768px) {
-    #main_capacitaciones .section_capacitaciones {
+    #main_capacitaciones .section_capacitaciones .BPM {
+        border-radius: 10px;
+        background: #94ADD7;
+        padding: 10px;
         display: grid;
         width: 35rem;
-        height: 90rem;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve"
-            "diez once"
-            "diez doce"
-            "trece catorce"
-            "trece quince"
-            "dieciseis diecisiete"
-            "dieciseis dieciocho"
+            "uno uno"
+            "dos tres"
+            "cuatro cuatro"
+            "cinco seis"
         ;
-        justify-items: center;
         align-items: center;
         justify-content: space-evenly;
         margin: auto;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 10px #a499b3;
 
         .section__uno {
+            text-align: justify;
             grid-area: uno;
-            .BPM {
-                width: 14rem;
-            }
         }
 
         .section__dos {
-            width: 19.6875rem;
-            font-size: 14px;
+            grid-area: dos;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
 
         .section__tres {
-            width: 19.6875rem;
-            font-size: 14px
+            grid-area: tres;
+            width: 80%;
+            height: 80%;
+            margin: 5px;
         }
 
         .section__cuatro {
             grid-area: cuatro;
-
-            .HACCP {
-                width: 14rem;
-                height: 100%;
-                margin: 5px;
-            }
+            flex-grow: 1;
+            flex-shrink: 1;
         }
 
-        .section__cinco {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__seis {
-            width: 19.6875rem;
-            font-size: 14px
-        }
-
-        .section__siete {
-            grid-area: siete;
-
-            .libre_de_gluten {
-                width: 14rem;
-                height: 100%;
-                margin: 5px;
-            }
-        }
-
-        .section__ocho {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__nueve {
-            width: 19.6875rem;
-            font-size: 14px
-        }
-
-        .section__diez {
-            grid-area: diez;
-
-            .PEPS {
-                width: 14rem;
-                margin: 5px;
-            }
-        }
-
-        .section__once {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__doce {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__trece {
-            grid-area: trece;
-
-            .POES {
-                width: 14rem;
-                margin: 5px;
-            }
-        }
-        .section__catorce {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__quince {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__dieciseis {
-            grid-area: dieciseis;
-
-            .Recall {
-                width: 14rem;
-                margin: 5px;
-            }
-        }
-
-        .section__diecisiete {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__dieciocho {
-            width: 19.6875rem;
-            font-size: 14px
+        .Ver_mas {
+            width: 13rem;
+            border-radius: 5px;
+            background-color: #2660a4;
+            grid-area: seis;
         }
     }
-}
 
-@media (max-width: 576px) {
-    #main_capacitaciones .section_capacitaciones {
-        display: grid;
-        width: 35rem;
-        height: 90rem;
-        grid-template-columns: 40% 60%;
-        grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve"
-            "diez once"
-            "diez doce"
-            "trece catorce"
-            "trece quince"
-            "dieciseis diecisiete"
-            "dieciseis dieciocho"
-        ;
-        justify-items: center;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: auto;
+    @media (max-width: 576px) {
+        .BPM {
+            border-radius: 10px;
+            background: #94ADD7;
+            padding: 10px;
+            display: grid;
+            width: 35rem;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+                "uno uno"
+                "dos tres"
+                "cuatro cuatro"
+                "cinco seis"
+            ;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 10px #a499b3;
 
-        .section__uno {
-            grid-area: uno;
-            .BPM {
-                width: 14rem;
+            .section__uno {
+                text-align: justify;
+                grid-area: uno;
             }
-        }
 
-        .section__dos {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
+            .section__dos {
+                grid-area: dos;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
 
-        .section__tres {
-            width: 19.6875rem;
-            font-size: 14px
-        }
-
-        .section__cuatro {
-            grid-area: cuatro;
-
-            .HACCP {
-                width: 14rem;
-                height: 100%;
+            .section__tres {
+                grid-area: tres;
+                width: 80%;
+                height: 80%;
                 margin: 5px;
             }
-        }
 
-        .section__cinco {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__seis {
-            width: 19.6875rem;
-            font-size: 14px
-        }
-
-        .section__siete {
-            grid-area: siete;
-
-            .libre_de_gluten {
-                width: 14rem;
-                height: 100%;
-                margin: 5px;
+            .section__cuatro {
+                grid-area: cuatro;
+                flex-grow: 1;
+                flex-shrink: 1;
             }
-        }
 
-        .section__ocho {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__nueve {
-            width: 19.6875rem;
-            font-size: 14px
-        }
-
-        .section__diez {
-            grid-area: diez;
-
-            .PEPS {
-                width: 14rem;
-                margin: 5px;
+            .Ver_mas {
+                width: 13rem;
+                border-radius: 5px;
+                background-color: #2660a4;
+                grid-area: seis;
             }
-        }
-
-        .section__once {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__doce {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__trece {
-            grid-area: trece;
-
-            .POES {
-                width: 14rem;
-                margin: 5px;
-            }
-        }
-        .section__catorce {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__quince {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__dieciseis {
-            grid-area: dieciseis;
-
-            .Recall {
-                width: 14rem;
-                margin: 5px;
-            }
-        }
-
-        .section__diecisiete {
-            width: 19.6875rem;
-            font-size: 14px;
-        }
-
-        .section__dieciocho {
-            width: 19.6875rem;
-            font-size: 14px
         }
     }
 }

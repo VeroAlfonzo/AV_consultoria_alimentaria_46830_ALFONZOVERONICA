@@ -1,0 +1,50 @@
+.grid_capacitaciones {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
+    display: grid;
+    width: 35rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "uno uno"
+        "dos tres"
+        "cuatro cuatro"
+        "cinco seis"
+    ;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #a499b3;
+
+    h3 {
+        text-align: justify;
+        grid-area: uno;
+    }
+
+    .parrafo_uno {
+        grid-area: dos;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    img {
+        grid-area: tres;
+        width: 80%;
+        height: 80%;
+        margin: 5px;
+    }
+
+    .parrafo_dos {
+        grid-area: cuatro;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .Ver_mas {
+        width: 13rem;
+        border-radius: 5px;
+        background-color: #2660a4;
+        grid-area: seis;
+    }
+}

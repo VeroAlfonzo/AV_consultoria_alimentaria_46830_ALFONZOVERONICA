@@ -138,8 +138,10 @@ h2, .h2 {
 #main_index {
   background-color: #A0BFE0; }
   #main_index .descripcion_empresa {
-    margin: 2.5rem;
-    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: justify;
     font-size: 20px; }
   #main_index .nuestro_enfoque {
@@ -151,16 +153,25 @@ h2, .h2 {
     font-style: italic;
     margin-bottom: 1.25rem; }
   #main_index .cualidades {
-    display: grid;
-    grid-template-columns: 50% 50%; }
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; }
     #main_index .cualidades div {
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px #79b8fc;
+      max-width: 250px;
       margin: 1.25rem; }
+      #main_index .cualidades div:hover {
+        transform: scale(1.1); }
       #main_index .cualidades div h5, #main_index .cualidades div .h5 {
         margin: 1rem; }
   #main_index .quienes_somos {
     display: grid;
     width: 68.75rem;
-    height: 40.625rem;
+    height: 42rem;
     grid-template-columns: 25% 75%;
     grid-template-areas: "uno dos " "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
     justify-items: start;
@@ -176,6 +187,7 @@ h2, .h2 {
     #main_index .quienes_somos .dos {
       grid-area: dos; }
     #main_index .quienes_somos .tres {
+      width: 650px;
       grid-area: tres; }
     #main_index .quienes_somos .cuatro {
       grid-area: cuatro; }
@@ -185,6 +197,7 @@ h2, .h2 {
     #main_index .quienes_somos .cinco {
       grid-area: cinco; }
     #main_index .quienes_somos .seis {
+      width: 650px;
       grid-area: seis; }
     #main_index .quienes_somos .siete {
       grid-area: siete; }
@@ -194,29 +207,8 @@ h2, .h2 {
     #main_index .quienes_somos .ocho {
       grid-area: ocho; }
     #main_index .quienes_somos .nueve {
+      width: 650px;
       grid-area: nueve; }
-
-@media (max-width: 576px) {
-  #main_index .quienes_somos {
-    display: grid;
-    width: 33.8125rem;
-    height: 44.25rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve"; }
-    #main_index .quienes_somos .uno {
-      grid-area: uno; }
-      #main_index .quienes_somos .uno .daniela {
-        width: 12.9375rem; }
-    #main_index .quienes_somos .cuatro {
-      grid-area: cuatro; }
-      #main_index .quienes_somos .cuatro .juan_carlos {
-        width: 12.9375rem;
-        height: 10.9375rem; }
-    #main_index .quienes_somos .siete {
-      grid-area: siete; }
-      #main_index .quienes_somos .siete .jimena {
-        width: 12.9375rem;
-        height: 11.6875rem; } }
 
 @media (max-width: 768px) {
   #main_index .quienes_somos {
@@ -240,9 +232,30 @@ h2, .h2 {
         width: 12.9375rem;
         height: 11.6875rem; } }
 
+@media (max-width: 576px) {
+  #main_index .quienes_somos {
+    display: grid;
+    width: 33.8125rem;
+    height: 44.25rem;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve"; }
+    #main_index .quienes_somos .uno {
+      grid-area: uno; }
+      #main_index .quienes_somos .uno .daniela {
+        width: 12.9375rem; }
+    #main_index .quienes_somos .cuatro {
+      grid-area: cuatro; }
+      #main_index .quienes_somos .cuatro .juan_carlos {
+        width: 12.9375rem;
+        height: 10.9375rem; }
+    #main_index .quienes_somos .siete {
+      grid-area: siete; }
+      #main_index .quienes_somos .siete .jimena {
+        width: 12.9375rem;
+        height: 11.6875rem; } }
+
 footer {
   background-color: #a499b3;
-  background-image: linear-gradient(#94ADD7 #a499b3);
   color: white;
   text-align: center; }
   footer .instagram {
@@ -264,11 +277,13 @@ footer {
     text-align: center;
     font-size: 1.25rem; }
   #main_servicios .servicios {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
+    width: 57rem;
     display: grid;
-    width: 68.75rem;
-    height: 40.625rem;
     grid-template-columns: 30% 70%;
-    grid-template-areas: "uno dos " "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
+    grid-template-areas: "uno dos " "uno tres";
     justify-items: start;
     align-items: center;
     margin: auto; }
@@ -370,234 +385,125 @@ footer {
   display: flex;
   flex-direction: column; }
   #main_capacitaciones .todo_proceso {
-    margin: 1.875rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
     text-align: justify;
     font-size: 20px; }
   #main_capacitaciones .section_capacitaciones {
+    max-width: 35rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+  #main_capacitaciones .section_capacitaciones p {
+    font-size: 18px;
+    text-align: justify; }
+  #main_capacitaciones .BPM {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
     display: grid;
-    width: 68.0625rem;
-    height: 75rem;
-    grid-template-columns: 25% 75%;
-    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve" "diez once" "diez doce" "trece catorce" "trece quince" "dieciseis diecisiete" "dieciseis dieciocho";
-    justify-items: start;
+    width: 35rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
     align-items: center;
     justify-content: space-evenly;
-    margin: auto; }
-    #main_capacitaciones .section_capacitaciones .section__uno {
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #a499b3; }
+    #main_capacitaciones .BPM .section__uno {
+      text-align: justify;
       grid-area: uno; }
-      #main_capacitaciones .section_capacitaciones .section__uno .BPM {
-        width: 16.25rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__dos {
-      grid-area: dos; }
-    #main_capacitaciones .section_capacitaciones .section__tres {
-      grid-area: tres; }
-    #main_capacitaciones .section_capacitaciones .section__cuatro {
-      grid-area: cuatro; }
-      #main_capacitaciones .section_capacitaciones .section__cuatro .HACCP {
-        width: 16.25rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__cinco {
-      grid-area: cinco; }
-    #main_capacitaciones .section_capacitaciones .section__seis {
+    #main_capacitaciones .BPM .section__dos {
+      grid-area: dos;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    #main_capacitaciones .BPM .section__tres {
+      grid-area: tres;
+      width: 80%;
+      height: 80%;
+      margin: 5px; }
+    #main_capacitaciones .BPM .section__cuatro {
+      grid-area: cuatro;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    #main_capacitaciones .BPM .Ver_mas {
+      width: 13rem;
+      border-radius: 5px;
+      background-color: #2660a4;
       grid-area: seis; }
-    #main_capacitaciones .section_capacitaciones .section__siete {
-      grid-area: siete; }
-      #main_capacitaciones .section_capacitaciones .section__siete .libre_de_gluten {
-        width: 16.25rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__ocho {
-      grid-area: ocho; }
-    #main_capacitaciones .section_capacitaciones .section__nueve {
-      grid-area: nueve; }
-    #main_capacitaciones .section_capacitaciones .section__diez {
-      grid-area: diez; }
-      #main_capacitaciones .section_capacitaciones .section__diez .PEPS {
-        width: 16.25rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__once {
-      grid-area: once; }
-    #main_capacitaciones .section_capacitaciones .section__doce {
-      grid-area: doce; }
-    #main_capacitaciones .section_capacitaciones .section__trece {
-      grid-area: trece; }
-      #main_capacitaciones .section_capacitaciones .section__trece .POES {
-        width: 16.25rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__catorce {
-      grid-area: catorce; }
-    #main_capacitaciones .section_capacitaciones .section__quince {
-      grid-area: quince; }
-    #main_capacitaciones .section_capacitaciones .section__dieciseis {
-      grid-area: dieciseis; }
-      #main_capacitaciones .section_capacitaciones .section__dieciseis .Recall {
-        width: 16.25rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__diecisiete {
-      grid-area: diecisiete; }
-    #main_capacitaciones .section_capacitaciones .section__dieciocho {
-      grid-area: dieciocho; }
 
 @media (max-width: 768px) {
-  #main_capacitaciones .section_capacitaciones {
+  #main_capacitaciones .section_capacitaciones .BPM {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
     display: grid;
     width: 35rem;
-    height: 90rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve" "diez once" "diez doce" "trece catorce" "trece quince" "dieciseis diecisiete" "dieciseis dieciocho";
-    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
     align-items: center;
     justify-content: space-evenly;
-    margin: auto; }
-    #main_capacitaciones .section_capacitaciones .section__uno {
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #a499b3; }
+    #main_capacitaciones .section_capacitaciones .BPM .section__uno {
+      text-align: justify;
       grid-area: uno; }
-      #main_capacitaciones .section_capacitaciones .section__uno .BPM {
-        width: 14rem; }
-    #main_capacitaciones .section_capacitaciones .section__dos {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__tres {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__cuatro {
-      grid-area: cuatro; }
-      #main_capacitaciones .section_capacitaciones .section__cuatro .HACCP {
-        width: 14rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__cinco {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__seis {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__siete {
-      grid-area: siete; }
-      #main_capacitaciones .section_capacitaciones .section__siete .libre_de_gluten {
-        width: 14rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__ocho {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__nueve {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__diez {
-      grid-area: diez; }
-      #main_capacitaciones .section_capacitaciones .section__diez .PEPS {
-        width: 14rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__once {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__doce {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__trece {
-      grid-area: trece; }
-      #main_capacitaciones .section_capacitaciones .section__trece .POES {
-        width: 14rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__catorce {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__quince {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__dieciseis {
-      grid-area: dieciseis; }
-      #main_capacitaciones .section_capacitaciones .section__dieciseis .Recall {
-        width: 14rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__diecisiete {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__dieciocho {
-      width: 19.6875rem;
-      font-size: 14px; } }
+    #main_capacitaciones .section_capacitaciones .BPM .section__dos {
+      grid-area: dos;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    #main_capacitaciones .section_capacitaciones .BPM .section__tres {
+      grid-area: tres;
+      width: 80%;
+      height: 80%;
+      margin: 5px; }
+    #main_capacitaciones .section_capacitaciones .BPM .section__cuatro {
+      grid-area: cuatro;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    #main_capacitaciones .section_capacitaciones .BPM .Ver_mas {
+      width: 13rem;
+      border-radius: 5px;
+      background-color: #2660a4;
+      grid-area: seis; } }
 
-@media (max-width: 576px) {
-  #main_capacitaciones .section_capacitaciones {
+@media (max-width: 768px) and (max-width: 576px) {
+  .BPM {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
     display: grid;
     width: 35rem;
-    height: 90rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve" "diez once" "diez doce" "trece catorce" "trece quince" "dieciseis diecisiete" "dieciseis dieciocho";
-    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
     align-items: center;
     justify-content: space-evenly;
-    margin: auto; }
-    #main_capacitaciones .section_capacitaciones .section__uno {
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #a499b3; }
+    .BPM .section__uno {
+      text-align: justify;
       grid-area: uno; }
-      #main_capacitaciones .section_capacitaciones .section__uno .BPM {
-        width: 14rem; }
-    #main_capacitaciones .section_capacitaciones .section__dos {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__tres {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__cuatro {
-      grid-area: cuatro; }
-      #main_capacitaciones .section_capacitaciones .section__cuatro .HACCP {
-        width: 14rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__cinco {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__seis {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__siete {
-      grid-area: siete; }
-      #main_capacitaciones .section_capacitaciones .section__siete .libre_de_gluten {
-        width: 14rem;
-        height: 100%;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__ocho {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__nueve {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__diez {
-      grid-area: diez; }
-      #main_capacitaciones .section_capacitaciones .section__diez .PEPS {
-        width: 14rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__once {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__doce {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__trece {
-      grid-area: trece; }
-      #main_capacitaciones .section_capacitaciones .section__trece .POES {
-        width: 14rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__catorce {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__quince {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__dieciseis {
-      grid-area: dieciseis; }
-      #main_capacitaciones .section_capacitaciones .section__dieciseis .Recall {
-        width: 14rem;
-        margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .section__diecisiete {
-      width: 19.6875rem;
-      font-size: 14px; }
-    #main_capacitaciones .section_capacitaciones .section__dieciocho {
-      width: 19.6875rem;
-      font-size: 14px; } }
+    .BPM .section__dos {
+      grid-area: dos;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    .BPM .section__tres {
+      grid-area: tres;
+      width: 80%;
+      height: 80%;
+      margin: 5px; }
+    .BPM .section__cuatro {
+      grid-area: cuatro;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    .BPM .Ver_mas {
+      width: 13rem;
+      border-radius: 5px;
+      background-color: #2660a4;
+      grid-area: seis; } }
 
 .header_contacto {
   width: 100%;
@@ -709,12 +615,22 @@ footer {
   #main_contacto h2, #main_contacto .h2 {
     background-color: #2660a4;
     color: black; }
-  #main_contacto .telefono {
-    width: 9.375rem;
-    height: 9.375rem; }
-  #main_contacto .email {
-    width: 7.5rem;
-    height: 7.5rem; }
+  #main_contacto .Contacto_telefono {
+    width: 45%;
+    border-radius: 5px; }
+    #main_contacto .Contacto_telefono .telefono {
+      width: 9.375rem;
+      height: 9.375rem; }
+    #main_contacto .Contacto_telefono .email {
+      width: 7.5rem;
+      height: 7.5rem; }
+  #main_contacto .Contacto_formulario {
+    width: 45%;
+    border-radius: 5px; }
+    #main_contacto .Contacto_formulario .enviar {
+      width: 100px;
+      border-radius: 5px;
+      background-color: #2660a4; }
 
 /*!
    * Bootstrap  v5.3.2 (https://getbootstrap.com/)

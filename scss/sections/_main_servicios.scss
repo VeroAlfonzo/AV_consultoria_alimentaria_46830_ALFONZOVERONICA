@@ -15,17 +15,15 @@
     }
 
     .servicios {
+        border-radius: 10px;
+        background: #94ADD7 ;
+        padding: 10px;
+        width: 57rem;    
         display: grid;
-        width: 68.75rem;
-        height: 40.625rem;
         grid-template-columns: 30% 70%;
         grid-template-areas:
             "uno dos "
             "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve"
         ;
         justify-items: start;
         align-items: center;

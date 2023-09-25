@@ -1,16 +1,32 @@
 #main_contacto {
     background-color: #A0BFE0;
     color: black;
+
     h2 {
         background-color: #2660a4;
         color: black;
     }
-    .telefono {
-        width: 9.375rem;
-        height: 9.375rem;
+    .Contacto_telefono{
+        width: 45%;
+        border-radius: 5px;
+        .telefono {
+            width: 9.375rem;
+            height: 9.375rem;
+        }
+    
+        .email {
+            width: 7.5rem;
+            height: 7.5rem;
+        }
     }
-    .email {
-        width: 7.5rem;
-        height: 7.5rem;
+    
+    .Contacto_formulario {
+        width: 45%;
+        border-radius: 5px;
+        .enviar {
+            width: 100px;
+            border-radius: 5px;
+            background-color: #2660a4;
+        }
     }
 }
