@@ -1,9 +1,70 @@
+.quienes_somos {
+    border-radius: 10px;
+    background-color: #a499b3;
+    box-shadow: 10px 10px 10px #94ADD7;
+    display: grid;
+    width: 60vw;
+    height: 20.5vw;
+    grid-template-columns: 35% 65%;
+    grid-template-areas:
+        "uno dos "
+        "uno tres"
+    ;
+    justify-items: start;
+    align-items: center;
+    margin: auto;
+
+    img {
+        grid-area: uno;
+        width: 15vw;
+    }
+
+    h4 {
+        grid-area: dos;
+    }
+
+    p {
+        width: 39vw;
+        grid-area: tres;
+    }
+}
+
+.servicios {
+    border-radius: 10px;
+    background: #94ADD7 ;
+    box-shadow: 10px 10px 10px #2660a4 ;
+    padding: 10px;
+    width: 65vw;    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "uno dos "
+        "uno tres"
+    ;
+    justify-items: start;
+    align-items: center;
+    margin: auto;
+
+    img {
+        grid-area: uno;
+        width: 16.25rem;
+    }
+
+    h3 {
+        grid-area: dos;
+    }
+
+    .descripcion_servicios {
+        grid-area: tres;
+    }
+}
+
 .grid_capacitaciones {
     border-radius: 10px;
     background: #94ADD7;
     padding: 10px;
     display: grid;
-    width: 35rem;
+    width: 50vw;
     grid-template-columns: 50% 50%;
     grid-template-areas:
         "uno uno"
@@ -30,15 +91,12 @@
 
     img {
         grid-area: tres;
-        width: 80%;
-        height: 80%;
+        width: 22vw;
         margin: 5px;
     }
 
     .parrafo_dos {
         grid-area: cuatro;
-        flex-grow: 1;
-        flex-shrink: 1;
     }
 
     .Ver_mas {

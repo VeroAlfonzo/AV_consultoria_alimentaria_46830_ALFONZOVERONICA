@@ -1,5 +1,77 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Noto+Serif+Display:wght@500 & display=swap");
+.quienes_somos, #main_index .daniela, #main_index .juan_carlos, #main_index .jimena {
+  border-radius: 10px;
+  background-color: #a499b3;
+  box-shadow: 10px 10px 10px #94ADD7;
+  display: grid;
+  width: 60vw;
+  height: 20.5vw;
+  grid-template-columns: 35% 65%;
+  grid-template-areas: "uno dos " "uno tres";
+  justify-items: start;
+  align-items: center;
+  margin: auto; }
+  .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
+    grid-area: uno;
+    width: 15vw; }
+  .quienes_somos h4, #main_index .daniela h4, #main_index .juan_carlos h4, #main_index .jimena h4, .quienes_somos .h4, #main_index .daniela .h4, #main_index .juan_carlos .h4, #main_index .jimena .h4 {
+    grid-area: dos; }
+  .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
+    width: 39vw;
+    grid-area: tres; }
+
+.servicios, #main_servicios .servicios_sistemas, #main_servicios .servicios_herramientas, #main_servicios .servicios_documentacion {
+  border-radius: 10px;
+  background: #94ADD7;
+  box-shadow: 10px 10px 10px #2660a4;
+  padding: 10px;
+  width: 65vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "uno dos " "uno tres";
+  justify-items: start;
+  align-items: center;
+  margin: auto; }
+  .servicios img, #main_servicios .servicios_sistemas img, #main_servicios .servicios_herramientas img, #main_servicios .servicios_documentacion img {
+    grid-area: uno;
+    width: 16.25rem; }
+  .servicios h3, #main_servicios .servicios_sistemas h3, #main_servicios .servicios_herramientas h3, #main_servicios .servicios_documentacion h3, .servicios .h3, #main_servicios .servicios_sistemas .h3, #main_servicios .servicios_herramientas .h3, #main_servicios .servicios_documentacion .h3 {
+    grid-area: dos; }
+  .servicios .descripcion_servicios, #main_servicios .servicios_sistemas .descripcion_servicios, #main_servicios .servicios_herramientas .descripcion_servicios, #main_servicios .servicios_documentacion .descripcion_servicios {
+    grid-area: tres; }
+
+.grid_capacitaciones, #main_capacitaciones .section_capacitaciones .BPM, #main_capacitaciones .section_capacitaciones .HACCP, #main_capacitaciones .section_capacitaciones .Sin_TACC, #main_capacitaciones .section_capacitaciones .PEPS, #main_capacitaciones .section_capacitaciones .POES, #main_capacitaciones .section_capacitaciones .RECALL {
+  border-radius: 10px;
+  background: #94ADD7;
+  padding: 10px;
+  display: grid;
+  width: 50vw;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px #a499b3; }
+  .grid_capacitaciones h3, #main_capacitaciones .section_capacitaciones .BPM h3, #main_capacitaciones .section_capacitaciones .HACCP h3, #main_capacitaciones .section_capacitaciones .Sin_TACC h3, #main_capacitaciones .section_capacitaciones .PEPS h3, #main_capacitaciones .section_capacitaciones .POES h3, #main_capacitaciones .section_capacitaciones .RECALL h3, .grid_capacitaciones .h3, #main_capacitaciones .section_capacitaciones .BPM .h3, #main_capacitaciones .section_capacitaciones .HACCP .h3, #main_capacitaciones .section_capacitaciones .Sin_TACC .h3, #main_capacitaciones .section_capacitaciones .PEPS .h3, #main_capacitaciones .section_capacitaciones .POES .h3, #main_capacitaciones .section_capacitaciones .RECALL .h3 {
+    text-align: justify;
+    grid-area: uno; }
+  .grid_capacitaciones .parrafo_uno, #main_capacitaciones .section_capacitaciones .BPM .parrafo_uno, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_uno, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_uno, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_uno, #main_capacitaciones .section_capacitaciones .POES .parrafo_uno, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_uno {
+    grid-area: dos;
+    flex-grow: 1;
+    flex-shrink: 1; }
+  .grid_capacitaciones img, #main_capacitaciones .section_capacitaciones .BPM img, #main_capacitaciones .section_capacitaciones .HACCP img, #main_capacitaciones .section_capacitaciones .Sin_TACC img, #main_capacitaciones .section_capacitaciones .PEPS img, #main_capacitaciones .section_capacitaciones .POES img, #main_capacitaciones .section_capacitaciones .RECALL img {
+    grid-area: tres;
+    width: 22vw;
+    margin: 5px; }
+  .grid_capacitaciones .parrafo_dos, #main_capacitaciones .section_capacitaciones .BPM .parrafo_dos, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_dos, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_dos, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_dos, #main_capacitaciones .section_capacitaciones .POES .parrafo_dos, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_dos {
+    grid-area: cuatro; }
+  .grid_capacitaciones .Ver_mas, #main_capacitaciones .section_capacitaciones .BPM .Ver_mas, #main_capacitaciones .section_capacitaciones .HACCP .Ver_mas, #main_capacitaciones .section_capacitaciones .Sin_TACC .Ver_mas, #main_capacitaciones .section_capacitaciones .PEPS .Ver_mas, #main_capacitaciones .section_capacitaciones .POES .Ver_mas, #main_capacitaciones .section_capacitaciones .RECALL .Ver_mas {
+    width: 13rem;
+    border-radius: 5px;
+    background-color: #2660a4;
+    grid-area: seis; }
+
 @font-face {
   font-family: "Proza libre";
   src: url("../resource/font/ProzaLibre-Bold.tt"); }
@@ -27,18 +99,18 @@ h2, .h2 {
   position: sticky;
   top: 0; }
   .header .logo {
-    width: 15.625rem;
+    width: 15.625vw;
     display: inline; }
   .header .AV {
     font-family: 'Noto Serif Display', serif;
     text-align: center;
     color: #fafafd;
-    font-size: 50px;
+    font-size: 5vw;
     background-color: #94ADD7;
     display: inline;
     position: relative;
-    top: -1.6875rem;
-    left: 8.75rem; }
+    top: -1.6875vw;
+    left: 8.75vw; }
   .header .Compromiso {
     font-family: 'Noto Serif Display', serif;
     font-style: italic;
@@ -47,19 +119,19 @@ h2, .h2 {
     display: inline;
     justify-content: center;
     position: relative;
-    top: 0.1875rem;
-    left: -16.3125rem;
+    top: 2.1875vw;
+    left: -34.3125vw;
     animation: texto 5s infinite; }
   .header .nav {
     position: relative;
-    top: -3rem;
-    right: 0rem;
+    top: -3vw;
+    right: 5vw;
     justify-content: space-evenly; }
     .header .nav ul {
       display: flex;
       flex-wrap: wrap;
       background-color: #94ADD7;
-      font-size: 1.875rem;
+      font-size: 2.3vw;
       list-style-type: none;
       justify-content: center; }
       .header .nav ul a {
@@ -80,31 +152,73 @@ h2, .h2 {
   100% {
     opacity: 1; } }
 
+@media (max-width: 992px) {
+  .header {
+    background-color: #94ADD7;
+    position: sticky;
+    top: 0; }
+    .header .logo {
+      width: 18.6vw;
+      display: inline; }
+    .header .AV {
+      font-family: 'Noto Serif Display', serif;
+      text-align: center;
+      color: #fafafd;
+      font-size: 5vw;
+      background-color: #94ADD7;
+      display: inline;
+      position: relative;
+      top: -1.6875vw;
+      left: 3.7vw; }
+    .header .Compromiso {
+      font-family: 'Noto Serif Display', serif;
+      font-style: italic;
+      text-align: center;
+      background-color: #94ADD7;
+      display: inline;
+      justify-content: center;
+      position: relative;
+      top: -7.8125vw;
+      left: 34vw;
+      animation: texto 5s infinite; }
+    .header .nav {
+      position: relative;
+      top: 0vw;
+      right: 5vw;
+      justify-content: space-evenly; }
+      .header .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #94ADD7;
+        font-size: 3vw;
+        list-style-type: none;
+        justify-content: center; } }
+
 @media (max-width: 768px) {
   .header {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end; }
     .header .logo {
-      width: 13.3rem;
+      width: 26.3vw;
       display: inline; }
     .header .AV {
-      font-size: 2.5rem;
+      font-size: 5.5vw;
       position: relative;
-      top: -3.6875rem;
-      left: .6875rem; }
+      top: -11.6875vw;
+      left: .6875vw; }
     .header .Compromiso {
       position: relative;
-      top: -4rem;
-      left: 17.8125rem; }
+      top: -12vw;
+      left: 37.2vw; }
     .header .nav {
       position: relative;
-      top: 0.8175rem;
-      right: 4rem; }
+      top: -4.1825vw;
+      right: 4vw; }
       .header .nav ul {
         display: flex;
         flex-wrap: wrap;
-        font-size: 2rem;
+        font-size: 3.5vw;
         list-style-type: none; } }
 
 @media (max-width: 576px) {
@@ -113,25 +227,25 @@ h2, .h2 {
     flex-wrap: wrap;
     align-items: flex-end; }
     .header .logo {
-      width: 9.375rem;
+      width: 30.375vw;
       display: inline; }
     .header .AV {
-      font-size: 1.875rem;
+      font-size: 6vw;
       position: relative;
-      top: -5.6875rem;
-      left: .6875rem; }
+      top: -16.6875vw;
+      left: 0.6875vw; }
     .header .Compromiso {
       position: relative;
-      top: -4rem;
-      left: 11.8125rem; }
+      top: -14vw;
+      left: 35.8125vw; }
     .header .nav {
       position: relative;
-      top: -2.8125rem;
-      right: 0rem; }
+      top: -2.8125vw;
+      right: 0vw; }
       .header .nav ul {
         display: flex;
         flex-wrap: wrap;
-        font-size: 1.5625rem;
+        font-size: 5vw;
         list-style-type: none;
         justify-content: center; } }
 
@@ -168,91 +282,80 @@ h2, .h2 {
         transform: scale(1.1); }
       #main_index .cualidades div h5, #main_index .cualidades div .h5 {
         margin: 1rem; }
-  #main_index .quienes_somos {
+
+@media (max-width: 992px) {
+  #main_index .descripcion_empresa {
+    margin: 20px; }
+  .quienes_somos, #main_index .daniela, #main_index .juan_carlos, #main_index .jimena {
+    border-radius: 10px;
+    background: #a499b3;
+    box-shadow: 10px 10px 10px #2660a4;
+    padding: 10px;
+    width: 50vw;
+    height: 43vw;
     display: grid;
-    width: 68.75rem;
-    height: 42rem;
-    grid-template-columns: 25% 75%;
-    grid-template-areas: "uno dos " "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve";
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
     justify-items: start;
     align-items: center;
     margin: auto; }
-    #main_index .quienes_somos div {
-      margin: 2px; }
-    #main_index .quienes_somos .uno {
+    .quienes_somos h4, #main_index .daniela h4, #main_index .juan_carlos h4, #main_index .jimena h4, .quienes_somos .h4, #main_index .daniela .h4, #main_index .juan_carlos .h4, #main_index .jimena .h4 {
       grid-area: uno; }
-      #main_index .quienes_somos .uno .daniela {
-        width: 16.25rem;
-        height: 12.5rem; }
-    #main_index .quienes_somos .dos {
-      grid-area: dos; }
-    #main_index .quienes_somos .tres {
-      width: 650px;
-      grid-area: tres; }
-    #main_index .quienes_somos .cuatro {
-      grid-area: cuatro; }
-      #main_index .quienes_somos .cuatro .juan_carlos {
-        width: 16.25rem;
-        height: 12.5rem; }
-    #main_index .quienes_somos .cinco {
-      grid-area: cinco; }
-    #main_index .quienes_somos .seis {
-      width: 650px;
-      grid-area: seis; }
-    #main_index .quienes_somos .siete {
-      grid-area: siete; }
-      #main_index .quienes_somos .siete .jimena {
-        width: 16.25rem;
-        height: 12.5rem; }
-    #main_index .quienes_somos .ocho {
-      grid-area: ocho; }
-    #main_index .quienes_somos .nueve {
-      width: 650px;
-      grid-area: nueve; }
+    .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
+      grid-area: dos;
+      width: 30vw; }
+    .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
+      width: 47vw;
+      grid-area: tres; } }
 
 @media (max-width: 768px) {
-  #main_index .quienes_somos {
+  #main_index .descripcion_empresa {
+    margin: 20px; }
+  .quienes_somos, #main_index .daniela, #main_index .juan_carlos, #main_index .jimena {
+    border-radius: 10px;
+    background: #a499b3;
+    box-shadow: 10px 10px 10px #2660a4;
+    padding: 10px;
+    width: 70vw;
+    height: 48vw;
     display: grid;
-    width: 33.8125rem;
-    height: 44.25rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve"; }
-    #main_index .quienes_somos .uno {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
+    justify-items: start;
+    align-items: center;
+    margin: auto; }
+    .quienes_somos h4, #main_index .daniela h4, #main_index .juan_carlos h4, #main_index .jimena h4, .quienes_somos .h4, #main_index .daniela .h4, #main_index .juan_carlos .h4, #main_index .jimena .h4 {
       grid-area: uno; }
-      #main_index .quienes_somos .uno .daniela {
-        width: 12.9375rem; }
-    #main_index .quienes_somos .cuatro {
-      grid-area: cuatro; }
-      #main_index .quienes_somos .cuatro .juan_carlos {
-        width: 12.9375rem;
-        height: 10.9375rem; }
-    #main_index .quienes_somos .siete {
-      grid-area: siete; }
-      #main_index .quienes_somos .siete .jimena {
-        width: 12.9375rem;
-        height: 11.6875rem; } }
+    .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
+      grid-area: dos;
+      width: 3ovw; }
+    .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
+      width: 65vw;
+      grid-area: tres; } }
 
 @media (max-width: 576px) {
-  #main_index .quienes_somos {
+  .quienes_somos, #main_index .daniela, #main_index .juan_carlos, #main_index .jimena {
+    border-radius: 10px;
+    background: #a499b3;
+    box-shadow: 10px 10px 10px #2660a4;
+    padding: 10px;
+    width: 70vw;
+    height: 68vw;
     display: grid;
-    width: 33.8125rem;
-    height: 44.25rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve"; }
-    #main_index .quienes_somos .uno {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
+    justify-items: start;
+    align-items: center;
+    margin: auto; }
+    .quienes_somos h4, #main_index .daniela h4, #main_index .juan_carlos h4, #main_index .jimena h4, .quienes_somos .h4, #main_index .daniela .h4, #main_index .juan_carlos .h4, #main_index .jimena .h4 {
       grid-area: uno; }
-      #main_index .quienes_somos .uno .daniela {
-        width: 12.9375rem; }
-    #main_index .quienes_somos .cuatro {
-      grid-area: cuatro; }
-      #main_index .quienes_somos .cuatro .juan_carlos {
-        width: 12.9375rem;
-        height: 10.9375rem; }
-    #main_index .quienes_somos .siete {
-      grid-area: siete; }
-      #main_index .quienes_somos .siete .jimena {
-        width: 12.9375rem;
-        height: 11.6875rem; } }
+    .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
+      grid-area: dos;
+      width: 35vw;
+      align-items: center; }
+    .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
+      width: 65vw;
+      grid-area: tres; } }
 
 footer {
   background-color: #a499b3;
@@ -276,81 +379,69 @@ footer {
     margin-bottom: 3.125rem;
     text-align: center;
     font-size: 1.25rem; }
-  #main_servicios .servicios {
+
+@media (max-width: 992px) {
+  #main_servicios .servicios, #main_servicios .servicios_sistemas, #main_servicios .servicios_herramientas, #main_servicios .servicios_documentacion {
     border-radius: 10px;
     background: #94ADD7;
+    box-shadow: 10px 10px 10px #2660a4;
     padding: 10px;
-    width: 57rem;
+    width: 70vw;
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-areas: "uno dos " "uno tres";
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
     justify-items: start;
     align-items: center;
     margin: auto; }
-    #main_servicios .servicios .iso_9001 {
+    #main_servicios .servicios h3, #main_servicios .servicios_sistemas h3, #main_servicios .servicios_herramientas h3, #main_servicios .servicios_documentacion h3, #main_servicios .servicios .h3, #main_servicios .servicios_sistemas .h3, #main_servicios .servicios_herramientas .h3, #main_servicios .servicios_documentacion .h3 {
       grid-area: uno; }
-      #main_servicios .servicios .iso_9001 .ISO {
-        width: 16.25rem; }
-    #main_servicios .servicios .Impletentación {
-      grid-area: dos; }
-    #main_servicios .servicios .Buenas_practicas {
-      grid-area: tres; }
-    #main_servicios .servicios .gestion_de_calidad {
-      grid-area: cuatro; }
-      #main_servicios .servicios .gestion_de_calidad .gestion {
-        width: 16.25rem; }
-    #main_servicios .servicios .herramientas {
-      grid-area: cinco; }
-    #main_servicios .servicios .entandarizacion {
-      grid-area: seis; }
-    #main_servicios .servicios .documentacion_gestion_calidad {
-      grid-area: siete; }
-      #main_servicios .servicios .documentacion_gestion_calidad .documentacion_gestion {
-        width: 16.25rem; }
-    #main_servicios .servicios .documentacion {
-      grid-area: ocho; }
-    #main_servicios .servicios .desarrollo {
-      grid-area: nueve; }
+    #main_servicios .servicios img, #main_servicios .servicios_sistemas img, #main_servicios .servicios_herramientas img, #main_servicios .servicios_documentacion img {
+      grid-area: dos;
+      width: 16.25rem; }
+    #main_servicios .servicios .descripcion_servicios, #main_servicios .servicios_sistemas .descripcion_servicios, #main_servicios .servicios_herramientas .descripcion_servicios, #main_servicios .servicios_documentacion .descripcion_servicios {
+      grid-area: tres; } }
 
 @media (max-width: 768px) {
-  #main_servicios .servicios {
+  #main_servicios .servicios, #main_servicios .servicios_sistemas, #main_servicios .servicios_herramientas, #main_servicios .servicios_documentacion {
+    border-radius: 10px;
+    background: #94ADD7;
+    box-shadow: 10px 10px 10px #2660a4;
+    padding: 10px;
+    width: 75vw;
     display: grid;
-    width: 33.8125rem;
-    height: 53.25rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve"; }
-    #main_servicios .servicios .iso_9001 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
+    justify-items: start;
+    align-items: center;
+    margin: auto; }
+    #main_servicios .servicios h3, #main_servicios .servicios_sistemas h3, #main_servicios .servicios_herramientas h3, #main_servicios .servicios_documentacion h3, #main_servicios .servicios .h3, #main_servicios .servicios_sistemas .h3, #main_servicios .servicios_herramientas .h3, #main_servicios .servicios_documentacion .h3 {
       grid-area: uno; }
-      #main_servicios .servicios .iso_9001 .ISO {
-        width: 12.25rem; }
-    #main_servicios .servicios .gestion_de_calidad {
-      grid-area: cuatro; }
-      #main_servicios .servicios .gestion_de_calidad .gestion {
-        width: 12.25rem; }
-    #main_servicios .servicios .documentacion_gestion_calidad {
-      grid-area: siete; }
-      #main_servicios .servicios .documentacion_gestion_calidad .documentacion_gestion {
-        width: 12.25rem; } }
+    #main_servicios .servicios img, #main_servicios .servicios_sistemas img, #main_servicios .servicios_herramientas img, #main_servicios .servicios_documentacion img {
+      grid-area: dos;
+      width: 16.25rem; }
+    #main_servicios .servicios .descripcion_servicios, #main_servicios .servicios_sistemas .descripcion_servicios, #main_servicios .servicios_herramientas .descripcion_servicios, #main_servicios .servicios_documentacion .descripcion_servicios {
+      grid-area: tres; } }
 
 @media (max-width: 576px) {
-  #main_servicios .servicios {
+  #main_servicios .servicios, #main_servicios .servicios_sistemas, #main_servicios .servicios_herramientas, #main_servicios .servicios_documentacion {
+    border-radius: 10px;
+    background: #94ADD7;
+    box-shadow: 10px 10px 10px #2660a4;
+    padding: 10px;
+    width: 75vw;
     display: grid;
-    width: 33.8125rem;
-    height: 53.25rem;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: "uno dos" "uno tres" "cuatro cinco" "cuatro seis" "siete ocho" "siete nueve"; }
-    #main_servicios .servicios .iso_9001 {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
+    justify-items: start;
+    align-items: center;
+    margin: auto; }
+    #main_servicios .servicios h3, #main_servicios .servicios_sistemas h3, #main_servicios .servicios_herramientas h3, #main_servicios .servicios_documentacion h3, #main_servicios .servicios .h3, #main_servicios .servicios_sistemas .h3, #main_servicios .servicios_herramientas .h3, #main_servicios .servicios_documentacion .h3 {
       grid-area: uno; }
-      #main_servicios .servicios .iso_9001 .ISO {
-        width: 12.25rem; }
-    #main_servicios .servicios .gestion_de_calidad {
-      grid-area: cuatro; }
-      #main_servicios .servicios .gestion_de_calidad .gestion {
-        width: 12.25rem; }
-    #main_servicios .servicios .documentacion_gestion_calidad {
-      grid-area: siete; }
-      #main_servicios .servicios .documentacion_gestion_calidad .documentacion_gestion {
-        width: 12.25rem; } }
+    #main_servicios .servicios img, #main_servicios .servicios_sistemas img, #main_servicios .servicios_herramientas img, #main_servicios .servicios_documentacion img {
+      grid-area: dos;
+      width: 16.25rem; }
+    #main_servicios .servicios .descripcion_servicios, #main_servicios .servicios_sistemas .descripcion_servicios, #main_servicios .servicios_herramientas .descripcion_servicios, #main_servicios .servicios_documentacion .descripcion_servicios {
+      grid-area: tres; } }
 
 #main_clientes {
   background-color: #A0BFE0;
@@ -370,15 +461,6 @@ footer {
       #main_clientes div img:hover {
         transform: scale(1.1); }
 
-@media (max-width: 576px) {
-  #main_clientes .Nuestros_clientes {
-    text-align: center;
-    font-size: 1.25rem; }
-  div img {
-    width: 9.375rem;
-    height: 9.375rem;
-    margin: 5px; } }
-
 #main_capacitaciones {
   background-color: #A0BFE0;
   color: black;
@@ -395,51 +477,19 @@ footer {
     margin: auto;
     display: flex;
     flex-direction: column; }
-  #main_capacitaciones .section_capacitaciones p {
-    font-size: 18px;
-    text-align: justify; }
-  #main_capacitaciones .BPM {
-    border-radius: 10px;
-    background: #94ADD7;
-    padding: 10px;
-    display: grid;
-    width: 35rem;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-bottom: 20px;
-    box-shadow: 10px 10px 10px #a499b3; }
-    #main_capacitaciones .BPM .section__uno {
-      text-align: justify;
-      grid-area: uno; }
-    #main_capacitaciones .BPM .section__dos {
-      grid-area: dos;
-      flex-grow: 1;
-      flex-shrink: 1; }
-    #main_capacitaciones .BPM .section__tres {
-      grid-area: tres;
-      width: 80%;
-      height: 80%;
-      margin: 5px; }
-    #main_capacitaciones .BPM .section__cuatro {
-      grid-area: cuatro;
-      flex-grow: 1;
-      flex-shrink: 1; }
-    #main_capacitaciones .BPM .Ver_mas {
-      width: 13rem;
-      border-radius: 5px;
-      background-color: #2660a4;
-      grid-area: seis; }
+    #main_capacitaciones .section_capacitaciones .section_capacitaciones p {
+      font-size: 18px;
+      text-align: justify; }
 
-@media (max-width: 768px) {
-  #main_capacitaciones .section_capacitaciones .BPM {
+@media (max-width: 992px) {
+  #main_capacitaciones .todo_proceso {
+    margin: 20px; }
+  .section_capacitaciones .grid_capacitaciones, #main_capacitaciones .section_capacitaciones .BPM, #main_capacitaciones .section_capacitaciones .HACCP, #main_capacitaciones .section_capacitaciones .Sin_TACC, #main_capacitaciones .section_capacitaciones .PEPS, #main_capacitaciones .section_capacitaciones .POES, #main_capacitaciones .section_capacitaciones .RECALL {
     border-radius: 10px;
     background: #94ADD7;
     padding: 10px;
     display: grid;
-    width: 35rem;
+    width: 70vw;
     grid-template-columns: 50% 50%;
     grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
     align-items: center;
@@ -447,35 +497,33 @@ footer {
     margin: auto;
     margin-bottom: 20px;
     box-shadow: 10px 10px 10px #a499b3; }
-    #main_capacitaciones .section_capacitaciones .BPM .section__uno {
+    .section_capacitaciones .grid_capacitaciones h3, #main_capacitaciones .section_capacitaciones .BPM h3, #main_capacitaciones .section_capacitaciones .HACCP h3, #main_capacitaciones .section_capacitaciones .Sin_TACC h3, #main_capacitaciones .section_capacitaciones .PEPS h3, #main_capacitaciones .section_capacitaciones .POES h3, #main_capacitaciones .section_capacitaciones .RECALL h3, .section_capacitaciones .grid_capacitaciones .h3, #main_capacitaciones .section_capacitaciones .BPM .h3, #main_capacitaciones .section_capacitaciones .HACCP .h3, #main_capacitaciones .section_capacitaciones .Sin_TACC .h3, #main_capacitaciones .section_capacitaciones .PEPS .h3, #main_capacitaciones .section_capacitaciones .POES .h3, #main_capacitaciones .section_capacitaciones .RECALL .h3 {
       text-align: justify;
       grid-area: uno; }
-    #main_capacitaciones .section_capacitaciones .BPM .section__dos {
+    .section_capacitaciones .grid_capacitaciones .parrafo_uno, #main_capacitaciones .section_capacitaciones .BPM .parrafo_uno, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_uno, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_uno, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_uno, #main_capacitaciones .section_capacitaciones .POES .parrafo_uno, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_uno {
       grid-area: dos;
       flex-grow: 1;
       flex-shrink: 1; }
-    #main_capacitaciones .section_capacitaciones .BPM .section__tres {
+    .section_capacitaciones .grid_capacitaciones img, #main_capacitaciones .section_capacitaciones .BPM img, #main_capacitaciones .section_capacitaciones .HACCP img, #main_capacitaciones .section_capacitaciones .Sin_TACC img, #main_capacitaciones .section_capacitaciones .PEPS img, #main_capacitaciones .section_capacitaciones .POES img, #main_capacitaciones .section_capacitaciones .RECALL img {
       grid-area: tres;
-      width: 80%;
-      height: 80%;
-      margin: 5px; }
-    #main_capacitaciones .section_capacitaciones .BPM .section__cuatro {
-      grid-area: cuatro;
-      flex-grow: 1;
-      flex-shrink: 1; }
-    #main_capacitaciones .section_capacitaciones .BPM .Ver_mas {
+      width: 80%; }
+    .section_capacitaciones .grid_capacitaciones .parrafo_dos, #main_capacitaciones .section_capacitaciones .BPM .parrafo_dos, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_dos, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_dos, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_dos, #main_capacitaciones .section_capacitaciones .POES .parrafo_dos, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_dos {
+      grid-area: cuatro; }
+    .section_capacitaciones .grid_capacitaciones .Ver_mas, #main_capacitaciones .section_capacitaciones .BPM .Ver_mas, #main_capacitaciones .section_capacitaciones .HACCP .Ver_mas, #main_capacitaciones .section_capacitaciones .Sin_TACC .Ver_mas, #main_capacitaciones .section_capacitaciones .PEPS .Ver_mas, #main_capacitaciones .section_capacitaciones .POES .Ver_mas, #main_capacitaciones .section_capacitaciones .RECALL .Ver_mas {
       width: 13rem;
       border-radius: 5px;
       background-color: #2660a4;
       grid-area: seis; } }
 
-@media (max-width: 768px) and (max-width: 576px) {
-  .BPM {
+@media (max-width: 768px) {
+  #main_capacitaciones .todo_proceso {
+    margin: 20px; }
+  .section_capacitaciones .grid_capacitaciones, #main_capacitaciones .section_capacitaciones .BPM, #main_capacitaciones .section_capacitaciones .HACCP, #main_capacitaciones .section_capacitaciones .Sin_TACC, #main_capacitaciones .section_capacitaciones .PEPS, #main_capacitaciones .section_capacitaciones .POES, #main_capacitaciones .section_capacitaciones .RECALL {
     border-radius: 10px;
     background: #94ADD7;
     padding: 10px;
     display: grid;
-    width: 35rem;
+    width: 78vw;
     grid-template-columns: 50% 50%;
     grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
     align-items: center;
@@ -483,23 +531,53 @@ footer {
     margin: auto;
     margin-bottom: 20px;
     box-shadow: 10px 10px 10px #a499b3; }
-    .BPM .section__uno {
+    .section_capacitaciones .grid_capacitaciones h3, #main_capacitaciones .section_capacitaciones .BPM h3, #main_capacitaciones .section_capacitaciones .HACCP h3, #main_capacitaciones .section_capacitaciones .Sin_TACC h3, #main_capacitaciones .section_capacitaciones .PEPS h3, #main_capacitaciones .section_capacitaciones .POES h3, #main_capacitaciones .section_capacitaciones .RECALL h3, .section_capacitaciones .grid_capacitaciones .h3, #main_capacitaciones .section_capacitaciones .BPM .h3, #main_capacitaciones .section_capacitaciones .HACCP .h3, #main_capacitaciones .section_capacitaciones .Sin_TACC .h3, #main_capacitaciones .section_capacitaciones .PEPS .h3, #main_capacitaciones .section_capacitaciones .POES .h3, #main_capacitaciones .section_capacitaciones .RECALL .h3 {
       text-align: justify;
       grid-area: uno; }
-    .BPM .section__dos {
+    .section_capacitaciones .grid_capacitaciones .parrafo_uno, #main_capacitaciones .section_capacitaciones .BPM .parrafo_uno, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_uno, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_uno, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_uno, #main_capacitaciones .section_capacitaciones .POES .parrafo_uno, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_uno {
       grid-area: dos;
       flex-grow: 1;
       flex-shrink: 1; }
-    .BPM .section__tres {
+    .section_capacitaciones .grid_capacitaciones img, #main_capacitaciones .section_capacitaciones .BPM img, #main_capacitaciones .section_capacitaciones .HACCP img, #main_capacitaciones .section_capacitaciones .Sin_TACC img, #main_capacitaciones .section_capacitaciones .PEPS img, #main_capacitaciones .section_capacitaciones .POES img, #main_capacitaciones .section_capacitaciones .RECALL img {
+      grid-area: tres;
+      width: 80%; }
+    .section_capacitaciones .grid_capacitaciones .parrafo_dos, #main_capacitaciones .section_capacitaciones .BPM .parrafo_dos, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_dos, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_dos, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_dos, #main_capacitaciones .section_capacitaciones .POES .parrafo_dos, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_dos {
+      grid-area: cuatro; }
+    .section_capacitaciones .grid_capacitaciones .Ver_mas, #main_capacitaciones .section_capacitaciones .BPM .Ver_mas, #main_capacitaciones .section_capacitaciones .HACCP .Ver_mas, #main_capacitaciones .section_capacitaciones .Sin_TACC .Ver_mas, #main_capacitaciones .section_capacitaciones .PEPS .Ver_mas, #main_capacitaciones .section_capacitaciones .POES .Ver_mas, #main_capacitaciones .section_capacitaciones .RECALL .Ver_mas {
+      width: 13rem;
+      border-radius: 5px;
+      background-color: #2660a4;
+      grid-area: seis; } }
+
+@media (max-width: 576px) {
+  .grid_capacitaciones, #main_capacitaciones .section_capacitaciones .BPM, #main_capacitaciones .section_capacitaciones .HACCP, #main_capacitaciones .section_capacitaciones .Sin_TACC, #main_capacitaciones .section_capacitaciones .PEPS, #main_capacitaciones .section_capacitaciones .POES, #main_capacitaciones .section_capacitaciones .RECALL {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
+    display: grid;
+    width: 82vw;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #a499b3; }
+    .grid_capacitaciones h3, #main_capacitaciones .section_capacitaciones .BPM h3, #main_capacitaciones .section_capacitaciones .HACCP h3, #main_capacitaciones .section_capacitaciones .Sin_TACC h3, #main_capacitaciones .section_capacitaciones .PEPS h3, #main_capacitaciones .section_capacitaciones .POES h3, #main_capacitaciones .section_capacitaciones .RECALL h3, .grid_capacitaciones .h3, #main_capacitaciones .section_capacitaciones .BPM .h3, #main_capacitaciones .section_capacitaciones .HACCP .h3, #main_capacitaciones .section_capacitaciones .Sin_TACC .h3, #main_capacitaciones .section_capacitaciones .PEPS .h3, #main_capacitaciones .section_capacitaciones .POES .h3, #main_capacitaciones .section_capacitaciones .RECALL .h3 {
+      text-align: justify;
+      grid-area: uno; }
+    .grid_capacitaciones .parrafo_uno, #main_capacitaciones .section_capacitaciones .BPM .parrafo_uno, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_uno, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_uno, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_uno, #main_capacitaciones .section_capacitaciones .POES .parrafo_uno, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_uno {
+      grid-area: dos;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    .grid_capacitaciones img, #main_capacitaciones .section_capacitaciones .BPM img, #main_capacitaciones .section_capacitaciones .HACCP img, #main_capacitaciones .section_capacitaciones .Sin_TACC img, #main_capacitaciones .section_capacitaciones .PEPS img, #main_capacitaciones .section_capacitaciones .POES img, #main_capacitaciones .section_capacitaciones .RECALL img {
       grid-area: tres;
       width: 80%;
       height: 80%;
       margin: 5px; }
-    .BPM .section__cuatro {
-      grid-area: cuatro;
-      flex-grow: 1;
-      flex-shrink: 1; }
-    .BPM .Ver_mas {
+    .grid_capacitaciones .parrafo_dos, #main_capacitaciones .section_capacitaciones .BPM .parrafo_dos, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_dos, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_dos, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_dos, #main_capacitaciones .section_capacitaciones .POES .parrafo_dos, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_dos {
+      grid-area: cuatro; }
+    .grid_capacitaciones .Ver_mas, #main_capacitaciones .section_capacitaciones .BPM .Ver_mas, #main_capacitaciones .section_capacitaciones .HACCP .Ver_mas, #main_capacitaciones .section_capacitaciones .Sin_TACC .Ver_mas, #main_capacitaciones .section_capacitaciones .PEPS .Ver_mas, #main_capacitaciones .section_capacitaciones .POES .Ver_mas, #main_capacitaciones .section_capacitaciones .RECALL .Ver_mas {
       width: 13rem;
       border-radius: 5px;
       background-color: #2660a4;
@@ -512,17 +590,17 @@ footer {
   position: sticky;
   top: 0; }
   .header_contacto .logo_contacto {
-    width: 14.375rem; }
+    width: 17vw; }
   .header_contacto .AV_contacto {
     font-family: 'Noto Serif Display', serif;
     text-align: center;
     color: #fafafd;
-    font-size: 3.125rem;
+    font-size: 5vw;
     background-color: #94ADD7;
     display: inline;
     position: relative;
-    top: -1rem;
-    left: 8.75rem; }
+    top: -1.6875vw;
+    left: 8.75vw; }
   .header_contacto .Compromiso_contacto {
     font-family: 'Noto Serif Display', serif;
     font-style: italic;
@@ -531,24 +609,22 @@ footer {
     display: inline;
     justify-content: center;
     position: relative;
-    top: .75rem;
-    left: -16.3125rem;
+    top: 2.1875vw;
+    left: -34.3125vw;
     animation: texto 5s infinite; }
   .header_contacto .nav_contacto {
     position: relative;
-    top: -4.25rem;
-    right: 0rem; }
+    top: -3vw;
+    right: 5vw;
+    justify-content: space-evenly; }
     .header_contacto .nav_contacto ul {
       display: flex;
       flex-wrap: wrap;
       background-color: #94ADD7;
-      font-size: 1.875rem;
+      font-size: 2.3vw;
       list-style-type: none;
-      justify-content: center;
-      margin-bottom: 0px; }
+      justify-content: center; }
       .header_contacto .nav_contacto ul .a_contacto {
-        font-family: 'Times New Roman', serif;
-        font-size: 1.875rem;
         color: #ffffff;
         text-decoration: none;
         background-color: #94ADD7;
@@ -556,58 +632,112 @@ footer {
         height: 1.875rem;
         display: inline-block;
         text-align: center; }
+        .header_contacto .nav_contacto ul .a_contacto:hover {
+          text-decoration: dashed;
+          color: black; }
+
+@keyframes texto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@media (max-width: 992px) {
+  .header_contacto {
+    background-color: #94ADD7;
+    position: sticky;
+    top: 0; }
+    .header_contacto .logo_contacto {
+      width: 18.6vw;
+      display: inline; }
+    .header_contacto .AV_contacto {
+      font-family: 'Noto Serif Display', serif;
+      text-align: center;
+      color: #fafafd;
+      font-size: 5vw;
+      background-color: #94ADD7;
+      display: inline;
+      position: relative;
+      top: -1.6875vw;
+      left: 3.7vw; }
+    .header_contacto .Compromiso_contacto {
+      font-family: 'Noto Serif Display', serif;
+      font-style: italic;
+      text-align: center;
+      background-color: #94ADD7;
+      display: inline;
+      justify-content: center;
+      position: relative;
+      top: -7.8125vw;
+      left: 34vw;
+      animation: texto 5s infinite; }
+    .header_contacto .nav_contacto {
+      position: relative;
+      top: 0vw;
+      right: 5vw;
+      justify-content: space-evenly; }
+      .header_contacto .nav_contacto ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #94ADD7;
+        font-size: 3vw;
+        list-style-type: none;
+        justify-content: center; } }
 
 @media (max-width: 768px) {
-  .header_contacto .logo_contacto {
-    width: 9.375rem;
-    display: inline; }
-  .AV_contacto {
-    font-size: 1.875rem;
-    background-color: #94ADD7;
-    position: relative;
-    top: -0.6875rem;
-    left: 0.6875rem; }
-  .Compromiso_contacto {
-    display: block;
-    position: relative;
-    top: -1rem;
-    left: 1.8125rem; }
-  .nav {
-    position: relative;
-    top: -2.25rem;
-    right: 0rem; }
-    .nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.5625rem;
-      list-style-type: none;
-      justify-content: center; } }
+  .header_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; }
+    .header_contacto .logo_contacto {
+      width: 26.3vw;
+      display: inline; }
+    .header_contacto .AV_contacto {
+      font-size: 5.5vw;
+      position: relative;
+      top: -11.6875vw;
+      left: .6875vw; }
+    .header_contacto .Compromiso_contacto {
+      position: relative;
+      top: -12vw;
+      left: 37.2vw; }
+    .header_contacto .nav_contacto {
+      position: relative;
+      top: -4.1825vw;
+      right: 4vw; }
+      .header_contacto .nav_contacto ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3.5vw;
+        list-style-type: none; } }
 
 @media (max-width: 576px) {
-  #body .header_contacto .logo_contacto {
-    width: 9.375rem;
-    display: inline; }
-  .AV_contacto {
-    font-size: 1.875rem;
-    background-color: #94ADD7;
-    position: relative;
-    top: -0.6875rem;
-    left: 0.6875rem; }
-  .Compromiso_contacto {
-    display: block;
-    position: relative;
-    top: -1rem;
-    left: 1.8125rem; }
-  .nav {
-    position: relative;
-    top: -2.25rem;
-    right: 0rem; }
-    .nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 1.5625rem;
-      list-style-type: none;
-      justify-content: center; } }
+  .header_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; }
+    .header_contacto .logo_contacto {
+      width: 30.375vw;
+      display: inline; }
+    .header_contacto .AV_contacto {
+      font-size: 6vw;
+      position: relative;
+      top: -16.6875vw;
+      left: 0.6875vw; }
+    .header_contacto .Compromiso_contacto {
+      position: relative;
+      top: -14vw;
+      left: 35.8125vw; }
+    .header_contacto .nav_contacto {
+      position: relative;
+      top: -2.8125vw;
+      right: 0vw; }
+      .header_contacto .nav_contacto ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 5vw;
+        list-style-type: none;
+        justify-content: center; } }
 
 #main_contacto {
   background-color: #A0BFE0;
@@ -625,7 +755,6 @@ footer {
       width: 7.5rem;
       height: 7.5rem; }
   #main_contacto .Contacto_formulario {
-    width: 45%;
     border-radius: 5px; }
     #main_contacto .Contacto_formulario .enviar {
       width: 100px;

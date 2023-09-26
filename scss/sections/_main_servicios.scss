@@ -14,105 +14,83 @@
         font-size: 1.25rem;
     }
 
-    .servicios {
+    .servicios_sistemas {
+        @extend .servicios;
+    }
+
+    .servicios_herramientas {
+        @extend .servicios;
+    }
+
+    .servicios_documentacion {
+        @extend .servicios;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    #main_servicios .servicios {
         border-radius: 10px;
-        background: #94ADD7 ;
+        background: #94ADD7;
+        box-shadow: 10px 10px 10px #2660a4;
         padding: 10px;
-        width: 57rem;    
+        width: 70vw;
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-            "uno dos "
-            "uno tres"
+            "uno uno "
+            "dos dos"
+            "tres tres"
         ;
         justify-items: start;
         align-items: center;
         margin: auto;
 
-        .iso_9001 {
+        h3 {
             grid-area: uno;
-
-            .ISO {
-                width: 16.25rem;
-            }
         }
 
-        .Impletentación {
+        img {
             grid-area: dos;
+            width: 16.25rem;
         }
 
-        .Buenas_practicas {
+        .descripcion_servicios {
             grid-area: tres;
-        }
-
-        .gestion_de_calidad {
-            grid-area: cuatro;
-
-            .gestion {
-                width: 16.25rem;
-            }
-        }
-
-        .herramientas {
-            grid-area: cinco;
-        }
-
-        .entandarizacion {
-            grid-area: seis;
-        }
-
-        .documentacion_gestion_calidad {
-            grid-area: siete;
-
-            .documentacion_gestion {
-                width: 16.25rem;
-            }
-        }
-
-        .documentacion {
-            grid-area: ocho;
-        }
-
-        .desarrollo {
-            grid-area: nueve;
         }
     }
 }
 
 @media (max-width: 768px) {
     #main_servicios .servicios {
+        border-radius: 10px;
+        background: #94ADD7;
+        box-shadow: 10px 10px 10px #2660a4;
+        padding: 10px;
+        width: 75vw;
         display: grid;
-        width: 33.8125rem;
-        height: 53.25rem;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve";
+            "uno uno "
+            "dos dos"
+            "tres tres"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
 
-        .iso_9001 {
+        h3 {
             grid-area: uno;
-
-            .ISO {
-                width: 12.25rem;
-            }
         }
-        .gestion_de_calidad {
-            grid-area: cuatro;
 
-            .gestion {
-                width: 12.25rem;
-            }
+        img {
+            grid-area: dos;
+            width: 16.25rem;
         }
-        .documentacion_gestion_calidad {
-            grid-area: siete;
 
-            .documentacion_gestion {
-                width: 12.25rem;
-            }
+        .descripcion_servicios {
+            grid-area: tres;
         }
     }
 
@@ -120,38 +98,33 @@
 
 @media (max-width: 576px) {
     #main_servicios .servicios {
+        border-radius: 10px;
+        background: #94ADD7;
+        box-shadow: 10px 10px 10px #2660a4;
+        padding: 10px;
+        width: 75vw;
         display: grid;
-        width: 33.8125rem;
-        height: 53.25rem;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve";
+            "uno uno "
+            "dos dos"
+            "tres tres"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
 
-        .iso_9001 {
+        h3 {
             grid-area: uno;
-
-            .ISO {
-                width: 12.25rem;
-            }
         }
-        .gestion_de_calidad {
-            grid-area: cuatro;
 
-            .gestion {
-                width: 12.25rem;
-            }
+        img {
+            grid-area: dos;
+            width: 16.25rem;
         }
-        .documentacion_gestion_calidad {
-            grid-area: siete;
 
-            .documentacion_gestion {
-                width: 12.25rem;
-            }
+        .descripcion_servicios {
+            grid-area: tres;
         }
     }
 }

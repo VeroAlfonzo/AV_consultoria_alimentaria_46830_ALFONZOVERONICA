@@ -24,184 +24,154 @@
 
     .cualidades {
         max-width: 600px;
-        margin:auto;
-        display:flex;
+        margin: auto;
+        display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
 
         div {
             border-radius: 10px;
-            box-shadow: 10px 10px 10px #79b8fc;;
+            box-shadow: 10px 10px 10px #79b8fc;
+            ;
             max-width: 250px;
             margin: 1.25rem;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
+
             h5 {
                 margin: 1rem;
             }
         }
     }
 
-    .quienes_somos {
-        display: grid;
-        width: 68.75rem;
-        height: 42rem;
-        grid-template-columns: 25% 75%;
-        grid-template-areas:
-            "uno dos "
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve"
-        ;
-        justify-items: start;
-        align-items: center;
-        margin: auto; 
+    .daniela {
+        @extend .quienes_somos;
+    }
 
-        div {
-            margin: 2px;
-        }
+    .juan_carlos {
+        @extend .quienes_somos;
+    }
 
-        .uno {
-            grid-area: uno;
-
-            .daniela {
-                width: 16.25rem;
-                height: 12.5rem;
-            }
-        }
-
-        .dos {
-            grid-area: dos;
-        }
-
-        .tres {
-            width: 650px;
-            grid-area: tres;
-        }
-
-        .cuatro {
-            grid-area: cuatro;
-
-            .juan_carlos {
-                width: 16.25rem;
-                height: 12.5rem;
-            }
-        }
-
-        .cinco {
-            grid-area: cinco;
-        }
-
-        .seis {
-            width: 650px;
-            grid-area: seis;
-        }
-
-        .siete {
-            grid-area: siete;
-
-            .jimena {
-                width: 16.25rem;
-                height: 12.5rem;
-            }
-        }
-
-        .ocho {
-            grid-area: ocho;
-        }
-
-        .nueve {
-            width: 650px;
-            grid-area: nueve;
-        }
+    .jimena {
+        @extend .quienes_somos;
     }
 }
 
+@media (max-width: 992px) {
+    #main_index .descripcion_empresa {
+        margin: 20px;
+    }
+    .quienes_somos {
+        border-radius: 10px;
+        background: #a499b3;
+        box-shadow: 10px 10px 10px #2660a4;
+        padding: 10px;
+        width: 50vw;
+        height: 43vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "uno uno "
+            "dos dos"
+            "tres tres"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
+
+        h4 {
+            grid-area: uno;
+        }
+
+        img {
+            grid-area: dos;
+            width: 30vw;
+        }
+
+        p {
+            width: 47vw;
+            grid-area: tres;
+        }
+
+    }
+}
 
 @media (max-width: 768px) {
-    #main_index .quienes_somos {
+    #main_index .descripcion_empresa {
+        margin: 20px;
+    }
+
+    .quienes_somos {
+        border-radius: 10px;
+        background: #a499b3;
+        box-shadow: 10px 10px 10px #2660a4;
+        padding: 10px;
+        width: 70vw;
+        height: 48vw;
         display: grid;
-        width: 33.8125rem;
-        height: 44.25rem;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve";
+            "uno uno "
+            "dos dos"
+            "tres tres"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
 
-        .uno {
+        h4 {
             grid-area: uno;
-
-            .daniela {
-                width: 12.9375rem;
-            }
         }
 
-        .cuatro {
-            grid-area: cuatro;
-
-            .juan_carlos {
-                width: 12.9375rem;
-                height: 10.9375rem;
-            }
+        img {
+            grid-area: dos;
+            width: 3ovw;
         }
 
-        .siete {
-            grid-area: siete;
-
-            .jimena {
-                width: 12.9375rem;
-                height: 11.6875rem;
-            }
+        p {
+            width: 65vw;
+            grid-area: tres;
         }
+
     }
 }
 
 @media (max-width: 576px) {
-    #main_index .quienes_somos {
+    .quienes_somos {
+        border-radius: 10px;
+        background: #a499b3;
+        box-shadow: 10px 10px 10px #2660a4;
+        padding: 10px;
+        width: 70vw;
+        height: 68vw;
         display: grid;
-        width: 33.8125rem;
-        height: 44.25rem;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-areas:
-            "uno dos"
-            "uno tres"
-            "cuatro cinco"
-            "cuatro seis"
-            "siete ocho"
-            "siete nueve";
+            "uno uno "
+            "dos dos"
+            "tres tres"
+        ;
+        justify-items: start;
+        align-items: center;
+        margin: auto;
 
-        .uno {
+        h4 {
             grid-area: uno;
-
-            .daniela {
-                width: 12.9375rem;
-            }
         }
 
-        .cuatro {
-            grid-area: cuatro;
-
-            .juan_carlos {
-                width: 12.9375rem;
-                height: 10.9375rem;
-            }
+        img {
+            grid-area: dos;
+            width: 35vw;
+            align-items: center;
         }
 
-        .siete {
-            grid-area: siete;
-
-            .jimena {
-                width: 12.9375rem;
-                height: 11.6875rem;
-            }
+        p {
+            width: 65vw;
+            grid-area: tres;
         }
+
     }
 }
