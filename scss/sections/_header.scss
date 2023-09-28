@@ -23,13 +23,14 @@
     .Compromiso {
         font-family: 'Noto Serif Display', serif;
         font-style: italic;
-        text-align: center;
+        font-size: 2vw;
+        text-align:center;
         background-color: #94ADD7;
         display: inline;
         justify-content: center;
         position: relative;
-        top: 2.1875vw;
-        left: -34.3125vw;
+        top: -6.8125vw;
+        left: 32.6875vw;
         animation: texto 5s infinite;
     }
 
@@ -64,146 +65,190 @@
         }
     }
 }
-
-@keyframes texto {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 992px) {
-    .header {
-        background-color: #94ADD7;
-        position: sticky;
-        top: 0;
-
-        .logo {
-            width: 18.6vw;
-            display: inline;
+    @keyframes texto {
+        0% {
+            opacity: 0;
         }
 
-        .AV {
-            font-family: 'Noto Serif Display', serif;
-            text-align: center;
-            color: rgb(250, 250, 253);
-            font-size: 5vw;
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .header {
             background-color: #94ADD7;
-            display: inline;
-            position: relative;
-            top: -1.6875vw;
-            left: 3.7vw;
-        }
+            position: sticky;
+            top: 0;
 
-        .Compromiso {
-            font-family: 'Noto Serif Display', serif;
-            font-style: italic;
-            text-align: center;
-            background-color: #94ADD7;
-            display: inline;
-            justify-content: center;
-            position: relative;
-            top: -7.8125vw;
-            left: 34vw;
-            animation: texto 5s infinite;
-        }
-
-        .nav {
-            position: relative;
-            top: 0vw;
-            right: 5vw;
-            justify-content: space-evenly;
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                background-color: #94ADD7;
-                font-size: 3vw;
-                list-style-type: none;
-                justify-content: center;
+            .logo {
+                width: 18.6vw;
+                display: inline;
             }
-        }
-    }
-}
 
-@media (max-width: 768px) {
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-
-        .logo {
-            width: 26.3vw;
-            display: inline;
-        }
-
-        .AV {
-            font-size: 5.5vw;
-            position: relative;
-            top: -11.6875vw;
-            left: .6875vw;
-        }
-
-        .Compromiso {
-            position: relative;
-            top: -12vw;
-            left: 37.2vw;
-        }
-
-        .nav {
-            position: relative;
-            top: -4.1825vw;
-            right: 4vw;
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 3.5vw;
-                list-style-type: none;
-            }
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-
-        .logo {
-            width: 30.375vw;
-            display: inline;
-        }
-
-        .AV {
-            font-size: 6vw;
-            position: relative;
-            top: -16.6875vw;
-            left: 0.6875vw;
-        }
-
-        .Compromiso {
-            position: relative;
-            top: -14vw;
-            left: 35.8125vw;
-        }
-
-        .nav {
-            position: relative;
-            top: -2.8125vw;
-            right: 0vw;
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
+            .AV {
+                font-family: 'Noto Serif Display', serif;
+                text-align: center;
+                color: rgb(250, 250, 253);
                 font-size: 5vw;
-                list-style-type: none;
+                background-color: #94ADD7;
+                display: inline;
+                position: relative;
+                top: 0.3125vw;
+                left: 3.7vw;
+            }
+
+            .Compromiso {
+                font-family: 'Noto Serif Display', serif;
+                font-style: italic;
+                text-align: center;
+                font-size: 2.7vw;
+                background-color: #94ADD7;
+                display: inline;
                 justify-content: center;
+                position: relative;
+                top: -1.8125vw;
+                left: 23vw;
+                animation: texto 5s infinite;
+            }
+
+            .nav {
+                position: relative;
+                top: 0vw;
+                right: 5vw;
+                justify-content: space-evenly;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    background-color: #94ADD7;
+                    font-size: 3vw;
+                    list-style-type: none;
+                    justify-content: center;
+                }
             }
         }
     }
-}
+
+    @media (max-width: 768px) {
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            .logo {
+                width: 26.3vw;
+                display: inline;
+            }
+
+            .AV {
+                font-size: 5.5vw;
+                position: relative;
+                top: -11.6875vw;
+                left: .6875vw;
+            }
+
+            .Compromiso {
+                font-size: 3.5vw;
+                position: relative;
+                top: -6vw;
+                left: 20.23vw;
+            }
+
+            .nav {
+                position: relative;
+                top: -4.1825vw;
+                right: 4vw;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 3.5vw;
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            .logo {
+                width: 28vw;
+                display: inline;
+            }
+
+            .AV {
+                font-size: 5.6vw;
+                position: relative;
+                top: -10.6875vw;
+                left: 0.6875vw;
+            }
+
+            .Compromiso {
+                font-size: 4vw;
+                position: relative;
+                top: -4vw;
+                left: 13.8125vw;;
+            }
+
+            .nav {
+                position: relative;
+                top: -2.8125vw;
+                right: 0vw;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 5vw;
+                    list-style-type: none;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 390px) {
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+
+            .logo {
+                width: 27vw;
+                display: inline;
+            }
+
+            .AV {
+                font-size: 6vw;
+                position: relative;
+                top: -9.6875vw;
+                left: 0.6875vw;
+            }
+
+            .Compromiso {
+                position: relative;
+                font-size: 2.5vh;
+                top: 1.5vw;
+                left: 14.8125vw;
+            }
+
+            .nav {
+                position: relative;
+                top: 2.1875vw;
+                right: 6vw;
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 5vw;
+                    list-style-type: none;
+                    justify-content: center;
+                }
+            }
+        }
+    }

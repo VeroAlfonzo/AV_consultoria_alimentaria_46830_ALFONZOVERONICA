@@ -137,32 +137,32 @@
         align-items: flex-end;
 
         .logo_contacto {
-            width: 26.3vw;
+            width: 24.3vw;
             display: inline;
         }
 
         .AV_contacto {
             font-size: 5.5vw;
             position: relative;
-            top: -11.6875vw;
+            top: -7.6875vw;
             left: .6875vw;
         }
 
         .Compromiso_contacto {
             position: relative;
-            top: -12vw;
-            left: 37.2vw;
+            top: -3vw;
+            left: 27.23vw;
         }
 
         .nav_contacto {
             position: relative;
-            top: -4.1825vw;
+            top: -0.18251vw;
             right: 4vw;
 
             ul {
                 display: flex;
                 flex-wrap: wrap;
-                font-size: 3.5vw;
+                font-size: 3.8vw;
                 list-style-type: none;
             }
         }
@@ -176,27 +176,68 @@
         align-items: flex-end;
 
         .logo_contacto {
-            width: 30.375vw;
+            width: 27vw;
             display: inline;
         }
 
         .AV_contacto {
-            font-size: 6vw;
+            font-size: 5.6vw;
             position: relative;
-            top: -16.6875vw;
+            top: -10.6875vw;
             left: 0.6875vw;
         }
 
         .Compromiso_contacto {
             position: relative;
-            top: -14vw;
-            left: 35.8125vw;
+            top: -4vw;
+            left: 24.8125vw;
         }
 
         .nav_contacto {
             position: relative;
             top: -2.8125vw;
             right: 0vw;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 4vw;
+                list-style-type: none;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .header_contacto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        .logo_contacto {
+            width: 25vw;
+        }
+
+        .AV_contacto {
+            font-size: 5vw;
+            position: relative;
+            top: -5.6875vw;
+            left: 0.6875vw;
+        }
+
+        .Compromiso_contacto {
+            font-size: 3.7vw;
+            position: relative;
+            top: 1.5vw;
+            left: 14.8125vw;
+        }
+
+        .nav_contacto {
+            position: relative;
+            top: 2.1875vw;
+            right: 6vw;
 
             ul {
                 display: flex;

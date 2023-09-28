@@ -57,9 +57,7 @@
     text-align: justify;
     grid-area: uno; }
   .grid_capacitaciones .parrafo_uno, #main_capacitaciones .section_capacitaciones .BPM .parrafo_uno, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_uno, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_uno, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_uno, #main_capacitaciones .section_capacitaciones .POES .parrafo_uno, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_uno {
-    grid-area: dos;
-    flex-grow: 1;
-    flex-shrink: 1; }
+    grid-area: dos; }
   .grid_capacitaciones img, #main_capacitaciones .section_capacitaciones .BPM img, #main_capacitaciones .section_capacitaciones .HACCP img, #main_capacitaciones .section_capacitaciones .Sin_TACC img, #main_capacitaciones .section_capacitaciones .PEPS img, #main_capacitaciones .section_capacitaciones .POES img, #main_capacitaciones .section_capacitaciones .RECALL img {
     grid-area: tres;
     width: 22vw;
@@ -114,13 +112,14 @@ h2, .h2 {
   .header .Compromiso {
     font-family: 'Noto Serif Display', serif;
     font-style: italic;
+    font-size: 2vw;
     text-align: center;
     background-color: #94ADD7;
     display: inline;
     justify-content: center;
     position: relative;
-    top: 2.1875vw;
-    left: -34.3125vw;
+    top: -6.8125vw;
+    left: 32.6875vw;
     animation: texto 5s infinite; }
   .header .nav {
     position: relative;
@@ -168,18 +167,19 @@ h2, .h2 {
       background-color: #94ADD7;
       display: inline;
       position: relative;
-      top: -1.6875vw;
+      top: 0.3125vw;
       left: 3.7vw; }
     .header .Compromiso {
       font-family: 'Noto Serif Display', serif;
       font-style: italic;
       text-align: center;
+      font-size: 2.7vw;
       background-color: #94ADD7;
       display: inline;
       justify-content: center;
       position: relative;
-      top: -7.8125vw;
-      left: 34vw;
+      top: -1.8125vw;
+      left: 23vw;
       animation: texto 5s infinite; }
     .header .nav {
       position: relative;
@@ -208,9 +208,10 @@ h2, .h2 {
       top: -11.6875vw;
       left: .6875vw; }
     .header .Compromiso {
+      font-size: 3.5vw;
       position: relative;
-      top: -12vw;
-      left: 37.2vw; }
+      top: -6vw;
+      left: 20.23vw; }
     .header .nav {
       position: relative;
       top: -4.1825vw;
@@ -227,21 +228,51 @@ h2, .h2 {
     flex-wrap: wrap;
     align-items: flex-end; }
     .header .logo {
-      width: 30.375vw;
+      width: 28vw;
       display: inline; }
     .header .AV {
-      font-size: 6vw;
+      font-size: 5.6vw;
       position: relative;
-      top: -16.6875vw;
+      top: -10.6875vw;
       left: 0.6875vw; }
     .header .Compromiso {
+      font-size: 4vw;
       position: relative;
-      top: -14vw;
-      left: 35.8125vw; }
+      top: -4vw;
+      left: 13.8125vw; }
     .header .nav {
       position: relative;
       top: -2.8125vw;
       right: 0vw; }
+      .header .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 5vw;
+        list-style-type: none;
+        justify-content: center; } }
+
+@media (max-width: 390px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; }
+    .header .logo {
+      width: 27vw;
+      display: inline; }
+    .header .AV {
+      font-size: 6vw;
+      position: relative;
+      top: -9.6875vw;
+      left: 0.6875vw; }
+    .header .Compromiso {
+      position: relative;
+      font-size: 2.5vh;
+      top: 1.5vw;
+      left: 14.8125vw; }
+    .header .nav {
+      position: relative;
+      top: 2.1875vw;
+      right: 6vw; }
       .header .nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -285,7 +316,7 @@ h2, .h2 {
 
 @media (max-width: 992px) {
   #main_index .descripcion_empresa {
-    margin: 20px; }
+    margin: auto; }
   .quienes_somos, #main_index .daniela, #main_index .juan_carlos, #main_index .jimena {
     border-radius: 10px;
     background: #a499b3;
@@ -317,7 +348,7 @@ h2, .h2 {
     box-shadow: 10px 10px 10px #2660a4;
     padding: 10px;
     width: 70vw;
-    height: 56vw;
+    height: 73vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "uno uno " "dos dos" "tres tres";
@@ -328,9 +359,9 @@ h2, .h2 {
       grid-area: uno; }
     .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
       grid-area: dos;
-      width: 3ovw; }
+      width: 40vw; }
     .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
-      width: 65vw;
+      width: 67vw;
       grid-area: tres; } }
 
 @media (max-width: 576px) {
@@ -339,8 +370,8 @@ h2, .h2 {
     background: #a499b3;
     box-shadow: 10px 10px 10px #2660a4;
     padding: 10px;
-    width: 70vw;
-    height: 68vw;
+    width: 90vw;
+    height: 76vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: "uno uno " "dos dos" "tres tres";
@@ -351,10 +382,35 @@ h2, .h2 {
       grid-area: uno; }
     .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
       grid-area: dos;
-      width: 35vw;
+      width: 48vw;
       align-items: center; }
     .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
-      width: 65vw;
+      width: 84vw;
+      grid-area: tres; } }
+
+@media (max-width: 390px) {
+  #main_index .descripcion_empresa {
+    margin: 20px; }
+  .quienes_somos, #main_index .daniela, #main_index .juan_carlos, #main_index .jimena {
+    border-radius: 10px;
+    background: #a499b3;
+    box-shadow: 10px 10px 10px #2660a4;
+    padding: 10px;
+    width: 86vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno " "dos dos" "tres tres";
+    justify-items: start;
+    align-items: center;
+    margin: auto; }
+    .quienes_somos h4, #main_index .daniela h4, #main_index .juan_carlos h4, #main_index .jimena h4, .quienes_somos .h4, #main_index .daniela .h4, #main_index .juan_carlos .h4, #main_index .jimena .h4 {
+      grid-area: uno; }
+    .quienes_somos img, #main_index .daniela img, #main_index .juan_carlos img, #main_index .jimena img {
+      grid-area: dos;
+      width: 60vw; }
+    .quienes_somos p, #main_index .daniela p, #main_index .juan_carlos p, #main_index .jimena p {
+      width: 82vw;
       grid-area: tres; } }
 
 footer {
@@ -557,7 +613,7 @@ footer {
     display: grid;
     width: 82vw;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "uno uno" "dos tres" "cuatro cuatro" "cinco seis";
+    grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco seis";
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
@@ -578,7 +634,41 @@ footer {
     .grid_capacitaciones .parrafo_dos, #main_capacitaciones .section_capacitaciones .BPM .parrafo_dos, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_dos, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_dos, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_dos, #main_capacitaciones .section_capacitaciones .POES .parrafo_dos, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_dos {
       grid-area: cuatro; }
     .grid_capacitaciones .Ver_mas, #main_capacitaciones .section_capacitaciones .BPM .Ver_mas, #main_capacitaciones .section_capacitaciones .HACCP .Ver_mas, #main_capacitaciones .section_capacitaciones .Sin_TACC .Ver_mas, #main_capacitaciones .section_capacitaciones .PEPS .Ver_mas, #main_capacitaciones .section_capacitaciones .POES .Ver_mas, #main_capacitaciones .section_capacitaciones .RECALL .Ver_mas {
-      width: 13rem;
+      width: 9rem;
+      border-radius: 5px;
+      background-color: #2660a4;
+      grid-area: seis; } }
+
+@media (max-width: 390px) {
+  .grid_capacitaciones, #main_capacitaciones .section_capacitaciones .BPM, #main_capacitaciones .section_capacitaciones .HACCP, #main_capacitaciones .section_capacitaciones .Sin_TACC, #main_capacitaciones .section_capacitaciones .PEPS, #main_capacitaciones .section_capacitaciones .POES, #main_capacitaciones .section_capacitaciones .RECALL {
+    border-radius: 10px;
+    background: #94ADD7;
+    padding: 10px;
+    display: grid;
+    width: 82vw;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco seis";
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px #a499b3; }
+    .grid_capacitaciones h3, #main_capacitaciones .section_capacitaciones .BPM h3, #main_capacitaciones .section_capacitaciones .HACCP h3, #main_capacitaciones .section_capacitaciones .Sin_TACC h3, #main_capacitaciones .section_capacitaciones .PEPS h3, #main_capacitaciones .section_capacitaciones .POES h3, #main_capacitaciones .section_capacitaciones .RECALL h3, .grid_capacitaciones .h3, #main_capacitaciones .section_capacitaciones .BPM .h3, #main_capacitaciones .section_capacitaciones .HACCP .h3, #main_capacitaciones .section_capacitaciones .Sin_TACC .h3, #main_capacitaciones .section_capacitaciones .PEPS .h3, #main_capacitaciones .section_capacitaciones .POES .h3, #main_capacitaciones .section_capacitaciones .RECALL .h3 {
+      text-align: justify;
+      grid-area: uno; }
+    .grid_capacitaciones .parrafo_uno, #main_capacitaciones .section_capacitaciones .BPM .parrafo_uno, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_uno, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_uno, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_uno, #main_capacitaciones .section_capacitaciones .POES .parrafo_uno, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_uno {
+      grid-area: dos;
+      flex-grow: 1;
+      flex-shrink: 1; }
+    .grid_capacitaciones img, #main_capacitaciones .section_capacitaciones .BPM img, #main_capacitaciones .section_capacitaciones .HACCP img, #main_capacitaciones .section_capacitaciones .Sin_TACC img, #main_capacitaciones .section_capacitaciones .PEPS img, #main_capacitaciones .section_capacitaciones .POES img, #main_capacitaciones .section_capacitaciones .RECALL img {
+      grid-area: tres;
+      width: 80%;
+      height: 80%;
+      margin: 5px; }
+    .grid_capacitaciones .parrafo_dos, #main_capacitaciones .section_capacitaciones .BPM .parrafo_dos, #main_capacitaciones .section_capacitaciones .HACCP .parrafo_dos, #main_capacitaciones .section_capacitaciones .Sin_TACC .parrafo_dos, #main_capacitaciones .section_capacitaciones .PEPS .parrafo_dos, #main_capacitaciones .section_capacitaciones .POES .parrafo_dos, #main_capacitaciones .section_capacitaciones .RECALL .parrafo_dos {
+      grid-area: cuatro; }
+    .grid_capacitaciones .Ver_mas, #main_capacitaciones .section_capacitaciones .BPM .Ver_mas, #main_capacitaciones .section_capacitaciones .HACCP .Ver_mas, #main_capacitaciones .section_capacitaciones .Sin_TACC .Ver_mas, #main_capacitaciones .section_capacitaciones .PEPS .Ver_mas, #main_capacitaciones .section_capacitaciones .POES .Ver_mas, #main_capacitaciones .section_capacitaciones .RECALL .Ver_mas {
+      width: 9rem;
       border-radius: 5px;
       background-color: #2660a4;
       grid-area: seis; } }
@@ -690,25 +780,25 @@ footer {
     flex-wrap: wrap;
     align-items: flex-end; }
     .header_contacto .logo_contacto {
-      width: 26.3vw;
+      width: 24.3vw;
       display: inline; }
     .header_contacto .AV_contacto {
       font-size: 5.5vw;
       position: relative;
-      top: -11.6875vw;
+      top: -7.6875vw;
       left: .6875vw; }
     .header_contacto .Compromiso_contacto {
       position: relative;
-      top: -12vw;
-      left: 37.2vw; }
+      top: -3vw;
+      left: 27.23vw; }
     .header_contacto .nav_contacto {
       position: relative;
-      top: -4.1825vw;
+      top: -0.18251vw;
       right: 4vw; }
       .header_contacto .nav_contacto ul {
         display: flex;
         flex-wrap: wrap;
-        font-size: 3.5vw;
+        font-size: 3.8vw;
         list-style-type: none; } }
 
 @media (max-width: 576px) {
@@ -717,21 +807,49 @@ footer {
     flex-wrap: wrap;
     align-items: flex-end; }
     .header_contacto .logo_contacto {
-      width: 30.375vw;
+      width: 27vw;
       display: inline; }
     .header_contacto .AV_contacto {
-      font-size: 6vw;
+      font-size: 5.6vw;
       position: relative;
-      top: -16.6875vw;
+      top: -10.6875vw;
       left: 0.6875vw; }
     .header_contacto .Compromiso_contacto {
       position: relative;
-      top: -14vw;
-      left: 35.8125vw; }
+      top: -4vw;
+      left: 24.8125vw; }
     .header_contacto .nav_contacto {
       position: relative;
       top: -2.8125vw;
       right: 0vw; }
+      .header_contacto .nav_contacto ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 4vw;
+        list-style-type: none;
+        justify-content: center; } }
+
+@media (max-width: 390px) {
+  .header_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end; }
+    .header_contacto .logo_contacto {
+      width: 25vw; }
+    .header_contacto .AV_contacto {
+      font-size: 5vw;
+      position: relative;
+      top: -5.6875vw;
+      left: 0.6875vw; }
+    .header_contacto .Compromiso_contacto {
+      font-size: 3.7vw;
+      position: relative;
+      top: 1.5vw;
+      left: 14.8125vw; }
+    .header_contacto .nav_contacto {
+      position: relative;
+      top: 2.1875vw;
+      right: 6vw; }
       .header_contacto .nav_contacto ul {
         display: flex;
         flex-wrap: wrap;
